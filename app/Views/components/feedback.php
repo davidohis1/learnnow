@@ -1,0 +1,2 @@
+<div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+<dialog id="confirm-dialog" class="dialog"><div class="dialog-icon"><?= icon('info',26) ?></div><h2 id="confirm-title">One quick check</h2><p id="confirm-description"></p><div class="dialog-actions"><button class="btn btn-secondary" data-confirm-cancel>Go back</button><button class="btn btn-primary" data-confirm-accept>Yes, continue</button></div></dialog>

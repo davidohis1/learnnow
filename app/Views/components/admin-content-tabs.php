@@ -1,0 +1,1 @@
+<nav class="content-tabs" aria-label="Content management"><?php foreach(require ROOT.'/config/resources.php' as $key=>$c): ?><a href="<?= e(route_url('/admin/content/' . ($key))) ?>" class="<?= $key===$resource?'active':'' ?>"><?= icon($c['icon'],14) ?> <?= e($c['label']) ?></a><?php endforeach; ?></nav>

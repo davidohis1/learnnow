@@ -1,0 +1,6 @@
+<?php require ROOT.'/app/Views/components/head.php'; ?>
+<body class="app-body admin-body"><a class="skip-link" href="#main">Skip to content</a>
+<?php $isAdmin=true;require ROOT.'/app/Views/components/sidebar.php'; ?>
+<div class="app-frame"><header class="app-topbar"><div class="topbar-left"><button class="icon-button mobile-menu" data-toggle-nav="app-sidebar" aria-label="Open navigation" aria-controls="app-sidebar" aria-expanded="false"><?= icon('menu') ?></button><span class="breadcrumb">Administration <?= icon('chevron',13) ?><strong><?= e(str_starts_with(route_path(),'/admin/content')?'Learning content':ucfirst(explode('/',trim(route_path(),'/'))[1]??'Overview')) ?></strong></span></div><div class="topbar-actions"><span class="badge badge-neutral"><?= icon('shield',13) ?> <?= e(ucfirst($currentUser['role'])) ?></span><a class="text-link small" href="<?= e(route_url('/')) ?>" target="_blank" rel="noopener">View website <?= icon('arrow-up-right',15) ?></a><span class="avatar avatar-small"><?= e(initials($currentUser['full_name'])) ?></span></div></header><main id="main" class="app-main"><?= $content ?></main><footer class="app-footer"><span>Thoughtfully built for better learning.</span><span>Learnow administration</span></footer></div>
+<?php require ROOT.'/app/Views/components/feedback.php'; ?>
+</body></html>

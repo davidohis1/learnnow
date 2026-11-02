@@ -1,0 +1,2 @@
+<?php require ROOT.'/app/Views/components/head.php'; ?>
+<body class="onboarding-body"><header class="onboarding-header"><?= logo() ?><form method="post" action="<?= e(route_url('/api/auth/logout')) ?>" data-api><?= csrfField() ?><button class="btn btn-ghost btn-small">Save & sign out <?= icon('logout',16) ?></button></form></header><main id="main"><?= $content ?></main><?php require ROOT.'/app/Views/components/feedback.php'; ?></body></html>

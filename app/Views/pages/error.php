@@ -1,0 +1,1 @@
+<div class="error-page"><div class="empty-icon"><?= icon('path',27) ?></div><span class="error-number"><?= e($code) ?></span><h1>A small detour.</h1><p><?= e($message) ?></p><a href="<?= e(route_url(($currentUser?'/dashboard':'/'))) ?>" class="btn btn-primary">Let’s get back on track <?= icon('arrow-right',17) ?></a></div>
