@@ -1,0 +1,22 @@
+{
+  "name": "learnow/platform",
+  "description": "Learnow digital skills learning platform",
+  "type": "project",
+  "require": {
+    "php": ">=8.2",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*",
+    "ext-mbstring": "*",
+    "firebase/php-jwt": "^7.0",
+    "phpmailer/phpmailer": "^6.10",
+    "ext-fileinfo": "*",
+    "ext-openssl": "*",
+    "ext-ctype": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Learnow\\": "app/"
+    }
+  },
+  "license": "proprietary"
+}

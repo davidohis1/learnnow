@@ -1,0 +1,1 @@
+ALTER TABLE peer_review_assignments ADD snapshot_title VARCHAR(160) NOT NULL DEFAULT '', ADD snapshot_description TEXT NULL, ADD snapshot_url VARCHAR(2000) NULL, ADD snapshot_repository VARCHAR(2000) NULL;

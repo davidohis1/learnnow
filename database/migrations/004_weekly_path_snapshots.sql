@@ -1,0 +1,1 @@
+CREATE TABLE weekly_report_paths (report_id BIGINT UNSIGNED NOT NULL, path_id BIGINT UNSIGNED NOT NULL, path_title VARCHAR(160) NOT NULL, lessons_completed INT UNSIGNED NOT NULL, lesson_total INT UNSIGNED NOT NULL, PRIMARY KEY(report_id,path_id), FOREIGN KEY(report_id) REFERENCES weekly_reports(id) ON DELETE CASCADE, FOREIGN KEY(path_id) REFERENCES learning_paths(id));
