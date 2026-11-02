@@ -1,0 +1,914 @@
+[
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example: \"https:\\\/\\\/learn.example\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example: \"\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/learn.example"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/learn.example"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/learn.example"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/learn.example"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/learn.example"
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/academy: \"https:\\\/\\\/learn.example\\\/academy\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/academy: \"\\\/academy\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/academy: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/academy: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/academy: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/academy: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/learn.example\/academy"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/learn.example\/academy"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/learn.example\/academy"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/learn.example\/academy"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on https:\/\/learn.example\/academy"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/learn.example\/academy"
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/courses.example:8443\/team\/skills\/: \"https:\\\/\\\/courses.example:8443\\\/team\\\/skills\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/team\\\/skills\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/courses.example:8443\/team\/skills\/: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/courses.example:8443\/team\/skills\/: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/courses.example:8443\/team\/skills\/: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/courses.example:8443\/team\/skills\/"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/courses.example:8443\/team\/skills\/"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/courses.example:8443\/team\/skills\/"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/courses.example:8443\/team\/skills\/"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on https:\/\/courses.example:8443\/team\/skills\/"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/courses.example:8443\/team\/skills\/"
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on http:\/\/127.0.0.1:9080\/a\/b: \"http:\\\/\\\/127.0.0.1:9080\\\/a\\\/b\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/a\\\/b\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on http:\/\/127.0.0.1:9080\/a\/b: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on http:\/\/127.0.0.1:9080\/a\/b: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on http:\/\/127.0.0.1:9080\/a\/b: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on http:\/\/127.0.0.1:9080\/a\/b"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on http:\/\/127.0.0.1:9080\/a\/b"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on http:\/\/127.0.0.1:9080\/a\/b"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on http:\/\/127.0.0.1:9080\/a\/b"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on http:\/\/127.0.0.1:9080\/a\/b"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on http:\/\/127.0.0.1:9080\/a\/b"
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/admin: \"https:\\\/\\\/learn.example\\\/admin\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/admin: \"\\\/admin\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/admin: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/admin: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/admin: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/admin: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/learn.example\/admin"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/learn.example\/admin"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/learn.example\/admin"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/learn.example\/admin"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on https:\/\/learn.example\/admin"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/learn.example\/admin"
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/assets: \"https:\\\/\\\/learn.example\\\/assets\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/assets: \"\\\/assets\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/assets: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/assets: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/assets: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/assets: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/learn.example\/assets"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/learn.example\/assets"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/learn.example\/assets"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/learn.example\/assets"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on https:\/\/learn.example\/assets"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/learn.example\/assets"
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/api: \"https:\\\/\\\/learn.example\\\/api\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/api: \"\\\/api\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/api: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/api: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/api: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/api: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/learn.example\/api"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/learn.example\/api"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/learn.example\/api"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/learn.example\/api"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on https:\/\/learn.example\/api"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/learn.example\/api"
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/learning%20space: \"https:\\\/\\\/learn.example\\\/learning%20space\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/learning%20space: \"\\\/learning%20space\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/learning%20space: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/learning%20space: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/learning%20space: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/learning%20space: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/learn.example\/learning%20space"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/learn.example\/learning%20space"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/learn.example\/learning%20space"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/learn.example\/learning%20space"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on https:\/\/learn.example\/learning%20space"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/learn.example\/learning%20space"
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"register\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/admin\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/api\\\/auth\\\/register\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/\u5b66\u4e60: \"https:\\\/\\\/learn.example\\\/%E5%AD%A6%E4%B9%A0\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/%E5%AD%A6%E4%B9%A0\\\/login?x=1#form\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/\u5b66\u4e60: \"?page=2\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/\u5b66\u4e60: \"#section\""
+    },
+    {
+        "passed": true,
+        "name": "to reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/paths?tag=a&tag=b\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/\\\/evil.example\\\/\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"https:\\\/\\\/evil.example\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"javascript:alert(1)\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/x\\\/..\\\/login\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/%2e%2e\\\/.env\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "route reference on https:\/\/learn.example\/\u5b66\u4e60: \"\\\/login\\r\\nInjected: x\""
+    },
+    {
+        "passed": true,
+        "name": "Query merge, repeated keys, arrays and fragments on https:\/\/learn.example\/\u5b66\u4e60"
+    },
+    {
+        "passed": true,
+        "name": "Asset URL on https:\/\/learn.example\/\u5b66\u4e60"
+    },
+    {
+        "passed": true,
+        "name": "Route\/query normalisation on https:\/\/learn.example\/\u5b66\u4e60"
+    },
+    {
+        "passed": true,
+        "name": "Both base-root slash forms on https:\/\/learn.example\/\u5b66\u4e60"
+    },
+    {
+        "passed": true,
+        "name": "Mount boundary prevents false matches on https:\/\/learn.example\/\u5b66\u4e60"
+    },
+    {
+        "passed": true,
+        "name": "Traversal request rejected on https:\/\/learn.example\/\u5b66\u4e60"
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"learn.example\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"ftp:\\\/\\\/learn.example\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"\\\/\\\/learn.example\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/user:pass@learn.example\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/learn.example?x=1\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/learn.example\\\/#x\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/learn.example\\\/a\\\/..\\\/b\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/learn.example\\\/a%2fb\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/learn.example\\\/a%5cb\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/learn.example\\\/\\r\\n\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/learn.example:99999\""
+    },
+    {
+        "passed": true,
+        "name": "Invalid base rejected: \"https:\\\/\\\/bad host.example\""
+    }
+]

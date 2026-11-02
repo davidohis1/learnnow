@@ -1,0 +1,220 @@
+PASS Page / returns 200
+PASS Page /paths returns 200
+PASS Page /about returns 200
+PASS Page /help returns 200
+PASS Page /contact returns 200
+PASS Page /privacy returns 200
+PASS Page /terms returns 200
+PASS Page /guidelines returns 200
+PASS Page /register returns 200
+PASS Page /login returns 200
+PASS Page /forgot-password returns 200
+PASS Page /reset-password returns 200
+PASS Page /paths?q=web returns 200
+PASS Private deployment files stay outside the public document root: /.env
+PASS Private deployment files stay outside the public document root: /storage/uploads/unknown.txt
+PASS Private deployment files stay outside the public document root: /vendor/autoload.php
+PASS Private deployment files stay outside the public document root: /.git/config
+PASS Secure response headers are applied
+PASS Page /dashboard returns 303
+PASS Guests are redirected to sign in
+PASS Missing CSRF token is rejected
+PASS Cross-site mutations are rejected even with a CSRF token
+PASS Unknown-account login errors are generic
+PASS Unconfigured email recovery is honestly reported
+PASS Registration creates a learner: HTTP owner
+PASS Registration creates a learner: HTTP other
+PASS Registration requires explicit terms acceptance
+PASS Normalised duplicate email addresses cannot create a second account
+PASS Email verification tokens are bound to their account owner
+PASS A valid, hash-stored verification token verifies the intended email
+PASS Email verification tokens are one-time use
+PASS Registration ignores forged roles and XP
+PASS JWT cookies use HttpOnly and SameSite=Lax
+PASS New learners must complete onboarding before the dashboard
+PASS Onboarding preferences persist midway
+PASS Onboarding resumes from the saved step
+PASS Onboarding finishes and enrols the selected path
+PASS Second learner completes onboarding
+PASS Page /dashboard returns 200
+PASS Page /my-learning returns 200
+PASS Page /paths returns 200
+PASS Page /paths/web-development-foundations returns 200
+PASS Page /achievements returns 200
+PASS Page /certificates returns 200
+PASS Page /referrals returns 200
+PASS Page /notifications returns 200
+PASS Page /reports returns 200
+PASS Page /schedule returns 200
+PASS Page /settings returns 200
+PASS Page /portfolio returns 200
+PASS Page /portfolio/new returns 200
+PASS Page /community returns 200
+PASS Page /assignments returns 200
+PASS Learner role is denied /admin
+PASS Learner role is denied /admin/users
+PASS Learner role is denied /admin/reviews
+PASS Learner role is denied /admin/settings
+PASS Learner role is denied /admin/content/paths
+PASS Learners cannot mutate admin settings
+PASS Page /admin returns 200
+PASS Page /admin/users returns 200
+PASS Page /admin/users/126 returns 200
+PASS Page /admin/reviews returns 200
+PASS Page /admin/rewards returns 200
+PASS Page /admin/settings returns 200
+PASS Page /admin/referrals returns 200
+PASS Page /admin/certificates returns 200
+PASS Page /admin/community returns 200
+PASS Page /admin/audit returns 200
+PASS Page /admin/reports returns 200
+PASS Missing records produce honest admin errors: /api/admin/content/paths/99999999/archive
+PASS Missing records produce honest admin errors: /api/admin/assign-reviewer/quiz/99999999
+PASS Missing records produce honest admin errors: /api/admin/certificates/99999999/revoke
+PASS Missing records produce honest admin errors: /api/admin/moderate/report/99999999
+PASS Page /admin/content/paths returns 200
+PASS Page /admin/content/paths/new returns 200
+PASS Page /admin/content/paths/1/edit returns 200
+PASS Page /admin/content/categories returns 200
+PASS Page /admin/content/categories/new returns 200
+PASS Page /admin/content/categories/12/edit returns 200
+PASS Page /admin/content/stages returns 200
+PASS Page /admin/content/stages/new returns 200
+PASS Page /admin/content/stages/1/edit returns 200
+PASS Page /admin/content/modules returns 200
+PASS Page /admin/content/modules/new returns 200
+PASS Page /admin/content/modules/1/edit returns 200
+PASS Page /admin/content/lessons returns 200
+PASS Page /admin/content/lessons/new returns 200
+PASS Page /admin/content/lessons/1/edit returns 200
+PASS Page /admin/content/quizzes returns 200
+PASS Page /admin/content/quizzes/new returns 200
+PASS Page /admin/content/quizzes/1/edit returns 200
+PASS Page /admin/content/assignments returns 200
+PASS Page /admin/content/assignments/new returns 200
+PASS Page /admin/content/assignments/1/edit returns 200
+PASS Page /admin/content/achievements returns 200
+PASS Page /admin/content/achievements/new returns 200
+PASS Page /admin/content/achievements/1/edit returns 200
+PASS Page /admin/content/levels returns 200
+PASS Page /admin/content/levels/new returns 200
+PASS Page /admin/content/levels/1/edit returns 200
+PASS Page /admin/content/skills returns 200
+PASS Page /admin/content/skills/new returns 200
+PASS Page /admin/content/skills/1/edit returns 200
+PASS Reviewers cannot manage accounts
+PASS Admin creates paths
+PASS Admin creates stages
+PASS Admin creates modules
+PASS Admin creates lessons
+PASS Admin creates stages
+PASS Admin creates modules
+PASS Admin creates lessons
+PASS Admin creates quizzes
+PASS Admin saves all four question types
+PASS Admin publishes a valid quiz
+PASS Admin creates assignments
+PASS Published admin-created paths appear in the public catalogue
+PASS Learner enrols in an admin-created path
+PASS Another learner enrols independently
+PASS Page visits and onboarding do not earn XP or invent activity
+PASS HTTP lesson route enforces locked stages
+PASS Direct completion cannot bypass a locked stage
+PASS Private notes are saved for the authenticated owner
+PASS Notes are isolated even when a forged owner ID is supplied
+PASS Optimistic note versions prevent a stale tab overwriting newer notes
+PASS Rejected stale notes do not mutate saved text
+PASS The server rejects incomplete lesson checklists
+PASS Checklist item persists
+PASS Checklist item persists
+PASS A completed lesson awards eligible server-side credit
+PASS Duplicate completion succeeds idempotently
+PASS Forged XP and duplicate HTTP submissions do not inflate rewards
+PASS Page /quizzes/64 returns 200
+PASS Learner starts the mixed quiz
+PASS Quiz answer keys and explanations are absent before submission
+PASS HTTP attempt ownership prevents answer submission by another learner
+PASS Learner submits mixed answers for real grading
+PASS Client-supplied result fields cannot bypass manual review
+PASS Page /quizzes/64?attempt=54 returns 200
+PASS Unassigned reviewers cannot grade a written answer
+PASS Administrator explicitly assigns a quiz reviewer
+PASS Page /admin/quiz-reviews/54 returns 200
+PASS Assigned reviewer grades the written response
+PASS Manual grading updates the actual quiz result
+PASS Page /assignments/19 returns 200
+PASS Executable uploads are rejected by actual file-content inspection
+PASS Supported multipart assignment uploads are accepted
+PASS Page /downloads/submissions/46 returns 200
+PASS Private attachments are served as downloads
+PASS Another learner cannot download private submission files
+PASS An unassigned reviewer cannot view submitted work
+PASS Administrator assigns an official assignment reviewer
+PASS Page /admin/reviews/46 returns 200
+PASS Page /downloads/submissions/46 returns 200
+PASS Official assignment acceptance records real feedback
+PASS Required quiz and assignment completion unlock the next stage
+PASS Learner finishes the required follow-up lesson
+PASS The server issues an eligibility-checked certificate
+PASS Page http://127.0.0.1:8081/verify/75c48935a8d32a948f82bca72ffe0cb1 returns 200
+PASS Public certificate verification shows its issuance snapshot
+PASS Administrator revokes a certificate with an audit reason
+PASS Public verification reflects certificate revocation
+PASS A learner creates a private portfolio project
+PASS Private portfolio pages are hidden from guests
+PASS Another learner cannot open the project editor
+PASS Portfolio edits enforce ownership on the server
+PASS Page http://127.0.0.1:8081/portfolio/17/edit returns 200
+PASS Portfolio images are validated and stored privately
+PASS Private project images cannot be guessed by URL
+PASS A project owner can explicitly publish their project
+PASS Page /projects/private-http-test-project-1fdf831e76 returns 200
+PASS Page /media/10 returns 200
+PASS Administrator configures peer-review eligibility
+PASS A project owner explicitly requests peer feedback
+PASS Peer assignment excludes self-reviews
+PASS Page /community/reviews/10 returns 200
+PASS A project owner cannot submit their own assigned peer review
+PASS An assigned peer submits the complete configured rubric
+PASS A submitted peer review cannot be duplicated
+PASS Peer feedback never awards official completion or assignment XP
+PASS Project owners can read submitted peer feedback
+PASS Administrators can hide a peer review with a recorded reason
+PASS Hidden peer reviews are no longer visible to reviewers
+PASS Buddy invitation does not expose account enumeration
+PASS The inviter cannot accept their own buddy request
+PASS The invited buddy explicitly accepts
+PASS Accepted buddies can propose a lesson challenge
+PASS A challenge needs the invited learner’s consent
+PASS Learners can block a buddy
+PASS Blocked relationships cannot create new challenges
+PASS Learner reports reach the moderation queue
+PASS Page /admin/community returns 200
+PASS Page /admin/certificates returns 200
+PASS Page /admin/reviews returns 200
+PASS Page /admin/users/126 returns 200
+PASS A real previous-week report can be generated on demand
+PASS Page /reports returns 200
+PASS Administrators cannot remove their own access
+PASS Suspension revokes the learner’s active sessions
+PASS A suspended account cannot use an old signed JWT
+PASS A modified JWT signature is rejected
+PASS Unsigned alg-none JWTs are rejected
+PASS JWT validation rejects expired
+PASS JWT validation rejects not yet valid
+PASS JWT validation rejects wrong issuer
+PASS JWT validation rejects wrong audience
+PASS JWT validation rejects mismatched subject
+PASS JWT validation rejects wrong signing algorithm
+PASS JWT validation rejects missing expiration
+PASS Page /dashboard returns 200
+PASS Refresh tokens rotate when a session is renewed
+PASS A reused refresh token is rejected
+PASS Refresh-token replay revokes the complete affected session
+PASS An eligible password reset token changes the password
+PASS Password reset revokes existing sign-in sessions
+PASS A consumed reset token cannot be reused
+PASS Logout succeeds with CSRF protection
+PASS Revoked logout cookies cannot replay a session
+
+218 passed; 0 failed. All records are in the isolated test database.

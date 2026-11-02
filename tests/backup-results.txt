@@ -1,0 +1,1 @@
+Logical backup restored successfully into an isolated database. Exact record counts match across 74 tables. Public data was not mutated. The temporary restore database was removed after verification.

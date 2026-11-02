@@ -1,0 +1,1343 @@
+[
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://learn.example/"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://learn.example/login"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://learn.example/register"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://learn.example/admin"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://learn.example/api/auth/register"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://learn.example/login?x=1#form",
+        "expected": "https://learn.example/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/login?x=1#form",
+        "expected": "https://learn.example/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://learn.example/paths?page=2"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://learn.example/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://learn.example/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://learn.example/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://learn.example",
+        "current": "/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://learn.example/assets/css/main.css"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://learn.example/academy/"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://learn.example/academy/login"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://learn.example/academy/register"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://learn.example/academy/admin"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://learn.example/academy/api/auth/register"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://learn.example/academy/login?x=1#form",
+        "expected": "https://learn.example/academy/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/academy/login?x=1#form",
+        "expected": "https://learn.example/academy/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://learn.example/academy/paths?page=2"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://learn.example/academy/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://learn.example/academy/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://learn.example/academy/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://learn.example/academy",
+        "current": "/academy/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://learn.example/academy/assets/css/main.css"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://courses.example:8443/team/skills/"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://courses.example:8443/team/skills/login"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://courses.example:8443/team/skills/register"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://courses.example:8443/team/skills/admin"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://courses.example:8443/team/skills/api/auth/register"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://courses.example:8443/team/skills/login?x=1#form",
+        "expected": "https://courses.example:8443/team/skills/login?x=1#form"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/team/skills/login?x=1#form",
+        "expected": "https://courses.example:8443/team/skills/login?x=1#form"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://courses.example:8443/team/skills/paths?page=2"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://courses.example:8443/team/skills/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://courses.example:8443/team/skills/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://courses.example:8443/team/skills/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://courses.example:8443/team/skills/",
+        "current": "/team/skills/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://courses.example:8443/team/skills/assets/css/main.css"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "http://127.0.0.1:9080/a/b/"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "http://127.0.0.1:9080/a/b/login"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "http://127.0.0.1:9080/a/b/register"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "http://127.0.0.1:9080/a/b/admin"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "http://127.0.0.1:9080/a/b/api/auth/register"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "http://127.0.0.1:9080/a/b/login?x=1#form",
+        "expected": "http://127.0.0.1:9080/a/b/login?x=1#form"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/a/b/login?x=1#form",
+        "expected": "http://127.0.0.1:9080/a/b/login?x=1#form"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "http://127.0.0.1:9080/a/b/paths?page=2"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "http://127.0.0.1:9080/a/b/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "http://127.0.0.1:9080/a/b/paths?tag=a&tag=b"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "http://127.0.0.1:9080/a/b/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "http://127.0.0.1:9080/a/b",
+        "current": "/a/b/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "http://127.0.0.1:9080/a/b/assets/css/main.css"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://learn.example/admin/"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://learn.example/admin/login"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://learn.example/admin/register"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://learn.example/admin/admin"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://learn.example/admin/api/auth/register"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://learn.example/admin/login?x=1#form",
+        "expected": "https://learn.example/admin/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/admin/login?x=1#form",
+        "expected": "https://learn.example/admin/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://learn.example/admin/paths?page=2"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://learn.example/admin/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://learn.example/admin/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://learn.example/admin/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://learn.example/admin",
+        "current": "/admin/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://learn.example/admin/assets/css/main.css"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://learn.example/assets/"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://learn.example/assets/login"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://learn.example/assets/register"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://learn.example/assets/admin"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://learn.example/assets/api/auth/register"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://learn.example/assets/login?x=1#form",
+        "expected": "https://learn.example/assets/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/assets/login?x=1#form",
+        "expected": "https://learn.example/assets/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://learn.example/assets/paths?page=2"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://learn.example/assets/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://learn.example/assets/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://learn.example/assets/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://learn.example/assets",
+        "current": "/assets/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://learn.example/assets/assets/css/main.css"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://learn.example/api/"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://learn.example/api/login"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://learn.example/api/register"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://learn.example/api/admin"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://learn.example/api/api/auth/register"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://learn.example/api/login?x=1#form",
+        "expected": "https://learn.example/api/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/api/login?x=1#form",
+        "expected": "https://learn.example/api/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://learn.example/api/paths?page=2"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://learn.example/api/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://learn.example/api/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://learn.example/api/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://learn.example/api",
+        "current": "/api/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://learn.example/api/assets/css/main.css"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://learn.example/learning%20space/"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://learn.example/learning%20space/login"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://learn.example/learning%20space/register"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://learn.example/learning%20space/admin"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://learn.example/learning%20space/api/auth/register"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://learn.example/learning%20space/login?x=1#form",
+        "expected": "https://learn.example/learning%20space/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/learning%20space/login?x=1#form",
+        "expected": "https://learn.example/learning%20space/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://learn.example/learning%20space/paths?page=2"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://learn.example/learning%20space/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://learn.example/learning%20space/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://learn.example/learning%20space/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://learn.example/learning%20space",
+        "current": "/learning%20space/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://learn.example/learning%20space/assets/css/main.css"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/login"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "register",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/register"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/admin",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/admin"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/api/auth/register",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/api/auth/register"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/%E5%AD%A6%E4%B9%A0/login?x=1#form",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "?page=2",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?page=2"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "#section",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1#section"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "to",
+        "reference": "/paths?tag=a&tag=b",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?tag=a&tag=b"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "//evil.example/",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "https://evil.example/login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "javascript:alert(1)",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/x/../login",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/%2e%2e/.env",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%2fb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/a%5cb",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/login\r\nInjected: x",
+        "expected": null
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "route",
+        "reference": "/paths?tag=a&tag=b&page=1",
+        "query": {
+            "page": 2,
+            "q": "a & b",
+            "filters": [
+                "web",
+                "design"
+            ]
+        },
+        "fragment": "Chapter 1",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+    },
+    {
+        "base": "https://learn.example/\u5b66\u4e60",
+        "current": "/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1",
+        "method": "asset",
+        "reference": "css/main.css",
+        "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/assets/css/main.css"
+    }
+]

@@ -1,0 +1,1134 @@
+[
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /",
+    "expected": "https://learn.example/",
+    "actual": "https://learn.example/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /login",
+    "expected": "https://learn.example/login",
+    "actual": "https://learn.example/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + register",
+    "expected": "https://learn.example/register",
+    "actual": "https://learn.example/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /admin",
+    "expected": "https://learn.example/admin",
+    "actual": "https://learn.example/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /api/auth/register",
+    "expected": "https://learn.example/api/auth/register",
+    "actual": "https://learn.example/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example + https://learn.example/login?x=1#form",
+    "expected": "https://learn.example/login?x=1#form",
+    "actual": "https://learn.example/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example + /login?x=1#form",
+    "expected": "https://learn.example/login?x=1#form",
+    "actual": "https://learn.example/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example + ?page=2",
+    "expected": "https://learn.example/paths?page=2",
+    "actual": "https://learn.example/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example + #section",
+    "expected": "https://learn.example/paths?filter=active&page=1#section",
+    "actual": "https://learn.example/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example + /paths?tag=a&tag=b",
+    "expected": "https://learn.example/paths?tag=a&tag=b",
+    "actual": "https://learn.example/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example + /paths?tag=a&tag=b&page=1",
+    "expected": "https://learn.example/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://learn.example/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://learn.example + css/main.css",
+    "expected": "https://learn.example/assets/css/main.css",
+    "actual": "https://learn.example/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /",
+    "expected": "https://learn.example/academy/",
+    "actual": "https://learn.example/academy/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /login",
+    "expected": "https://learn.example/academy/login",
+    "actual": "https://learn.example/academy/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + register",
+    "expected": "https://learn.example/academy/register",
+    "actual": "https://learn.example/academy/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /admin",
+    "expected": "https://learn.example/academy/admin",
+    "actual": "https://learn.example/academy/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /api/auth/register",
+    "expected": "https://learn.example/academy/api/auth/register",
+    "actual": "https://learn.example/academy/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/academy + https://learn.example/academy/login?x=1#form",
+    "expected": "https://learn.example/academy/login?x=1#form",
+    "actual": "https://learn.example/academy/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/academy + /academy/login?x=1#form",
+    "expected": "https://learn.example/academy/login?x=1#form",
+    "actual": "https://learn.example/academy/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/academy + ?page=2",
+    "expected": "https://learn.example/academy/paths?page=2",
+    "actual": "https://learn.example/academy/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/academy + #section",
+    "expected": "https://learn.example/academy/paths?filter=active&page=1#section",
+    "actual": "https://learn.example/academy/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/academy + /paths?tag=a&tag=b",
+    "expected": "https://learn.example/academy/paths?tag=a&tag=b",
+    "actual": "https://learn.example/academy/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/academy + /paths?tag=a&tag=b&page=1",
+    "expected": "https://learn.example/academy/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://learn.example/academy/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://learn.example/academy + css/main.css",
+    "expected": "https://learn.example/academy/assets/css/main.css",
+    "actual": "https://learn.example/academy/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /",
+    "expected": "https://courses.example:8443/team/skills/",
+    "actual": "https://courses.example:8443/team/skills/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /login",
+    "expected": "https://courses.example:8443/team/skills/login",
+    "actual": "https://courses.example:8443/team/skills/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + register",
+    "expected": "https://courses.example:8443/team/skills/register",
+    "actual": "https://courses.example:8443/team/skills/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /admin",
+    "expected": "https://courses.example:8443/team/skills/admin",
+    "actual": "https://courses.example:8443/team/skills/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /api/auth/register",
+    "expected": "https://courses.example:8443/team/skills/api/auth/register",
+    "actual": "https://courses.example:8443/team/skills/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://courses.example:8443/team/skills/ + https://courses.example:8443/team/skills/login?x=1#form",
+    "expected": "https://courses.example:8443/team/skills/login?x=1#form",
+    "actual": "https://courses.example:8443/team/skills/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://courses.example:8443/team/skills/ + /team/skills/login?x=1#form",
+    "expected": "https://courses.example:8443/team/skills/login?x=1#form",
+    "actual": "https://courses.example:8443/team/skills/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://courses.example:8443/team/skills/ + ?page=2",
+    "expected": "https://courses.example:8443/team/skills/paths?page=2",
+    "actual": "https://courses.example:8443/team/skills/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://courses.example:8443/team/skills/ + #section",
+    "expected": "https://courses.example:8443/team/skills/paths?filter=active&page=1#section",
+    "actual": "https://courses.example:8443/team/skills/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://courses.example:8443/team/skills/ + /paths?tag=a&tag=b",
+    "expected": "https://courses.example:8443/team/skills/paths?tag=a&tag=b",
+    "actual": "https://courses.example:8443/team/skills/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://courses.example:8443/team/skills/ + /paths?tag=a&tag=b&page=1",
+    "expected": "https://courses.example:8443/team/skills/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://courses.example:8443/team/skills/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://courses.example:8443/team/skills/ + css/main.css",
+    "expected": "https://courses.example:8443/team/skills/assets/css/main.css",
+    "actual": "https://courses.example:8443/team/skills/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /",
+    "expected": "http://127.0.0.1:9080/a/b/",
+    "actual": "http://127.0.0.1:9080/a/b/"
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /login",
+    "expected": "http://127.0.0.1:9080/a/b/login",
+    "actual": "http://127.0.0.1:9080/a/b/login"
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + register",
+    "expected": "http://127.0.0.1:9080/a/b/register",
+    "actual": "http://127.0.0.1:9080/a/b/register"
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /admin",
+    "expected": "http://127.0.0.1:9080/a/b/admin",
+    "actual": "http://127.0.0.1:9080/a/b/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /api/auth/register",
+    "expected": "http://127.0.0.1:9080/a/b/api/auth/register",
+    "actual": "http://127.0.0.1:9080/a/b/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: http://127.0.0.1:9080/a/b + http://127.0.0.1:9080/a/b/login?x=1#form",
+    "expected": "http://127.0.0.1:9080/a/b/login?x=1#form",
+    "actual": "http://127.0.0.1:9080/a/b/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: http://127.0.0.1:9080/a/b + /a/b/login?x=1#form",
+    "expected": "http://127.0.0.1:9080/a/b/login?x=1#form",
+    "actual": "http://127.0.0.1:9080/a/b/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: http://127.0.0.1:9080/a/b + ?page=2",
+    "expected": "http://127.0.0.1:9080/a/b/paths?page=2",
+    "actual": "http://127.0.0.1:9080/a/b/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: http://127.0.0.1:9080/a/b + #section",
+    "expected": "http://127.0.0.1:9080/a/b/paths?filter=active&page=1#section",
+    "actual": "http://127.0.0.1:9080/a/b/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: http://127.0.0.1:9080/a/b + /paths?tag=a&tag=b",
+    "expected": "http://127.0.0.1:9080/a/b/paths?tag=a&tag=b",
+    "actual": "http://127.0.0.1:9080/a/b/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: http://127.0.0.1:9080/a/b + /paths?tag=a&tag=b&page=1",
+    "expected": "http://127.0.0.1:9080/a/b/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "http://127.0.0.1:9080/a/b/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: http://127.0.0.1:9080/a/b + css/main.css",
+    "expected": "http://127.0.0.1:9080/a/b/assets/css/main.css",
+    "actual": "http://127.0.0.1:9080/a/b/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /",
+    "expected": "https://learn.example/admin/",
+    "actual": "https://learn.example/admin/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /login",
+    "expected": "https://learn.example/admin/login",
+    "actual": "https://learn.example/admin/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + register",
+    "expected": "https://learn.example/admin/register",
+    "actual": "https://learn.example/admin/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /admin",
+    "expected": "https://learn.example/admin/admin",
+    "actual": "https://learn.example/admin/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /api/auth/register",
+    "expected": "https://learn.example/admin/api/auth/register",
+    "actual": "https://learn.example/admin/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/admin + https://learn.example/admin/login?x=1#form",
+    "expected": "https://learn.example/admin/login?x=1#form",
+    "actual": "https://learn.example/admin/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/admin + /admin/login?x=1#form",
+    "expected": "https://learn.example/admin/login?x=1#form",
+    "actual": "https://learn.example/admin/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/admin + ?page=2",
+    "expected": "https://learn.example/admin/paths?page=2",
+    "actual": "https://learn.example/admin/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/admin + #section",
+    "expected": "https://learn.example/admin/paths?filter=active&page=1#section",
+    "actual": "https://learn.example/admin/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/admin + /paths?tag=a&tag=b",
+    "expected": "https://learn.example/admin/paths?tag=a&tag=b",
+    "actual": "https://learn.example/admin/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/admin + /paths?tag=a&tag=b&page=1",
+    "expected": "https://learn.example/admin/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://learn.example/admin/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://learn.example/admin + css/main.css",
+    "expected": "https://learn.example/admin/assets/css/main.css",
+    "actual": "https://learn.example/admin/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /",
+    "expected": "https://learn.example/assets/",
+    "actual": "https://learn.example/assets/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /login",
+    "expected": "https://learn.example/assets/login",
+    "actual": "https://learn.example/assets/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + register",
+    "expected": "https://learn.example/assets/register",
+    "actual": "https://learn.example/assets/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /admin",
+    "expected": "https://learn.example/assets/admin",
+    "actual": "https://learn.example/assets/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /api/auth/register",
+    "expected": "https://learn.example/assets/api/auth/register",
+    "actual": "https://learn.example/assets/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/assets + https://learn.example/assets/login?x=1#form",
+    "expected": "https://learn.example/assets/login?x=1#form",
+    "actual": "https://learn.example/assets/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/assets + /assets/login?x=1#form",
+    "expected": "https://learn.example/assets/login?x=1#form",
+    "actual": "https://learn.example/assets/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/assets + ?page=2",
+    "expected": "https://learn.example/assets/paths?page=2",
+    "actual": "https://learn.example/assets/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/assets + #section",
+    "expected": "https://learn.example/assets/paths?filter=active&page=1#section",
+    "actual": "https://learn.example/assets/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/assets + /paths?tag=a&tag=b",
+    "expected": "https://learn.example/assets/paths?tag=a&tag=b",
+    "actual": "https://learn.example/assets/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/assets + /paths?tag=a&tag=b&page=1",
+    "expected": "https://learn.example/assets/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://learn.example/assets/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://learn.example/assets + css/main.css",
+    "expected": "https://learn.example/assets/assets/css/main.css",
+    "actual": "https://learn.example/assets/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /",
+    "expected": "https://learn.example/api/",
+    "actual": "https://learn.example/api/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /login",
+    "expected": "https://learn.example/api/login",
+    "actual": "https://learn.example/api/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + register",
+    "expected": "https://learn.example/api/register",
+    "actual": "https://learn.example/api/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /admin",
+    "expected": "https://learn.example/api/admin",
+    "actual": "https://learn.example/api/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /api/auth/register",
+    "expected": "https://learn.example/api/api/auth/register",
+    "actual": "https://learn.example/api/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/api + https://learn.example/api/login?x=1#form",
+    "expected": "https://learn.example/api/login?x=1#form",
+    "actual": "https://learn.example/api/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/api + /api/login?x=1#form",
+    "expected": "https://learn.example/api/login?x=1#form",
+    "actual": "https://learn.example/api/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/api + ?page=2",
+    "expected": "https://learn.example/api/paths?page=2",
+    "actual": "https://learn.example/api/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/api + #section",
+    "expected": "https://learn.example/api/paths?filter=active&page=1#section",
+    "actual": "https://learn.example/api/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/api + /paths?tag=a&tag=b",
+    "expected": "https://learn.example/api/paths?tag=a&tag=b",
+    "actual": "https://learn.example/api/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/api + /paths?tag=a&tag=b&page=1",
+    "expected": "https://learn.example/api/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://learn.example/api/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://learn.example/api + css/main.css",
+    "expected": "https://learn.example/api/assets/css/main.css",
+    "actual": "https://learn.example/api/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /",
+    "expected": "https://learn.example/learning%20space/",
+    "actual": "https://learn.example/learning%20space/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /login",
+    "expected": "https://learn.example/learning%20space/login",
+    "actual": "https://learn.example/learning%20space/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + register",
+    "expected": "https://learn.example/learning%20space/register",
+    "actual": "https://learn.example/learning%20space/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /admin",
+    "expected": "https://learn.example/learning%20space/admin",
+    "actual": "https://learn.example/learning%20space/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /api/auth/register",
+    "expected": "https://learn.example/learning%20space/api/auth/register",
+    "actual": "https://learn.example/learning%20space/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/learning%20space + https://learn.example/learning%20space/login?x=1#form",
+    "expected": "https://learn.example/learning%20space/login?x=1#form",
+    "actual": "https://learn.example/learning%20space/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/learning%20space + /learning%20space/login?x=1#form",
+    "expected": "https://learn.example/learning%20space/login?x=1#form",
+    "actual": "https://learn.example/learning%20space/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/learning%20space + ?page=2",
+    "expected": "https://learn.example/learning%20space/paths?page=2",
+    "actual": "https://learn.example/learning%20space/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/learning%20space + #section",
+    "expected": "https://learn.example/learning%20space/paths?filter=active&page=1#section",
+    "actual": "https://learn.example/learning%20space/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/learning%20space + /paths?tag=a&tag=b",
+    "expected": "https://learn.example/learning%20space/paths?tag=a&tag=b",
+    "actual": "https://learn.example/learning%20space/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/learning%20space + /paths?tag=a&tag=b&page=1",
+    "expected": "https://learn.example/learning%20space/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://learn.example/learning%20space/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://learn.example/learning%20space + css/main.css",
+    "expected": "https://learn.example/learning%20space/assets/css/main.css",
+    "actual": "https://learn.example/learning%20space/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /login",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/login",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/login"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + register",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/register",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/register"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /admin",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/admin",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/admin"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /api/auth/register",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/api/auth/register",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/api/auth/register"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/学习 + https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/学习 + /%E5%AD%A6%E4%B9%A0/login?x=1#form",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/login?x=1#form"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/学习 + ?page=2",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?page=2",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?page=2"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/学习 + #section",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1#section",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?filter=active&page=1#section"
+  },
+  {
+    "passed": true,
+    "name": "to: https://learn.example/学习 + /paths?tag=a&tag=b",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?tag=a&tag=b",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?tag=a&tag=b"
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + //evil.example/",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + https://evil.example/login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + javascript:alert(1)",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /x/../login",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /%2e%2e/.env",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /a%2fb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /a%5cb",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /login\r\nInjected: x",
+    "expected": null,
+    "actual": null
+  },
+  {
+    "passed": true,
+    "name": "route: https://learn.example/学习 + /paths?tag=a&tag=b&page=1",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/paths?tag=a&tag=b&page=2&q=a%20%26%20b&filters%5B0%5D=web&filters%5B1%5D=design#Chapter%201"
+  },
+  {
+    "passed": true,
+    "name": "asset: https://learn.example/学习 + css/main.css",
+    "expected": "https://learn.example/%E5%AD%A6%E4%B9%A0/assets/css/main.css",
+    "actual": "https://learn.example/%E5%AD%A6%E4%B9%A0/assets/css/main.css"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: "
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: learn.example"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: ftp://learn.example"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: //learn.example"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://user:pass@learn.example"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://learn.example?x=1"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://learn.example/#x"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://learn.example/a/../b"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://learn.example/a%2fb"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://learn.example/a%5cb"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://learn.example/\r\n"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://learn.example:99999"
+  },
+  {
+    "passed": true,
+    "name": "Invalid base rejected: https://bad host.example"
+  }
+]

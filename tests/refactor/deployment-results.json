@@ -1,0 +1,882 @@
+{
+  "passed": 219,
+  "failed": 0,
+  "checks": [
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration page"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 APP_URL metadata matches this deployment"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 all registration links, forms and assets use the configured base"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 no-sniff header"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 script CSP remains enforced"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/css/fonts.css"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/css/main.css"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/css/refinements.css"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/js/app.js"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/js/url.js"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/js/api.js"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/fonts/font-0.ttf"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/fonts/font-8.ttf"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 asset /assets/images/favicon.svg"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 stylesheet dependencies are base-relative"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /.env"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /.git/config"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /app/bootstrap.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /vendor/autoload.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /bin/migrate.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /config/database.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /database/migrations/001_initial.sql"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /storage/mysql/mysql/user.frm"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /storage/logs/application.log"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /storage/backups/preview-verification.sql.gz"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /tests/fixtures.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /composer.json"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /public/index.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 private path denied: /README.md"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 missing static asset is not falsely successful"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 prefixed API 404 is JSON"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 HEAD keeps GET route semantics without a body"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 routing preserves query parameters"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 false-like terms are not accepted as consent"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 malformed password confirmation is a validation error"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration requires CSRF"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 cross-site mutations rejected"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 actual registration succeeds"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration redirect is absolute and correctly prefixed"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 all authentication/CSRF cookies use the mount path"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 cookie Secure matches the verified deployment mode"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 cookies preserve HttpOnly and SameSite=Lax"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration writes a real account"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 stored password is an Argon2id hash"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration invents no XP"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration schema relationship: user_preferences"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration schema relationship: study_schedules"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration schema relationship: notification_preferences"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration schema relationship: onboarding_responses"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration schema relationship: referral_codes"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 registration schema relationship: auth_sessions"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 onboarding submission works"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 learner page /dashboard"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 generated URLs stay inside the installation: /dashboard"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 learner page /paths/web-development-foundations"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 generated URLs stay inside the installation: /paths/web-development-foundations"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 learner page /lessons/1"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 generated URLs stay inside the installation: /lessons/1"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 learner page /portfolio"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 generated URLs stay inside the installation: /portfolio"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 learner page /settings"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 generated URLs stay inside the installation: /settings"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 learner page /referrals"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 generated URLs stay inside the installation: /referrals"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 learner page /notifications"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 generated URLs stay inside the installation: /notifications"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 referral share URL uses APP_URL, not browser origin"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 logout redirect"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 actual login succeeds"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8083 normalised duplicate email fails honestly"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration page"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills APP_URL metadata matches this deployment"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills all registration links, forms and assets use the configured base"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills no-sniff header"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills script CSP remains enforced"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/css/fonts.css"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/css/main.css"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/css/refinements.css"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/js/app.js"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/js/url.js"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/js/api.js"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/fonts/font-0.ttf"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/fonts/font-8.ttf"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills asset /assets/images/favicon.svg"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills stylesheet dependencies are base-relative"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /.env"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /.git/config"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /app/bootstrap.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /vendor/autoload.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /bin/migrate.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /config/database.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /database/migrations/001_initial.sql"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /storage/mysql/mysql/user.frm"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /storage/logs/application.log"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /storage/backups/preview-verification.sql.gz"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /tests/fixtures.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /composer.json"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /public/index.php"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills private path denied: /README.md"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills missing static asset is not falsely successful"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills prefixed API 404 is JSON"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills HEAD keeps GET route semantics without a body"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills routing preserves query parameters"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills false-like terms are not accepted as consent"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills malformed password confirmation is a validation error"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration requires CSRF"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills cross-site mutations rejected"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills actual registration succeeds"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration redirect is absolute and correctly prefixed"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills all authentication/CSRF cookies use the mount path"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills cookie Secure matches the verified deployment mode"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills cookies preserve HttpOnly and SameSite=Lax"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration writes a real account"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills stored password is an Argon2id hash"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration invents no XP"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration schema relationship: user_preferences"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration schema relationship: study_schedules"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration schema relationship: notification_preferences"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration schema relationship: onboarding_responses"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration schema relationship: referral_codes"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills registration schema relationship: auth_sessions"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills onboarding submission works"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills learner page /dashboard"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /dashboard"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills learner page /paths/web-development-foundations"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /paths/web-development-foundations"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills learner page /lessons/1"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /lessons/1"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills learner page /portfolio"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /portfolio"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills learner page /settings"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /settings"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills learner page /referrals"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /referrals"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills learner page /notifications"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /notifications"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills referral share URL uses APP_URL, not browser origin"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills logout redirect"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills actual login succeeds"
+    },
+    {
+      "passed": true,
+      "name": "127.0.0.1:8084/classroom/skills normalised duplicate email fails honestly"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration page"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college APP_URL metadata matches this deployment"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college all registration links, forms and assets use the configured base"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college no-sniff header"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college script CSP remains enforced"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college production HSTS"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college production anti-framing policy"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college production does not emit the test marker"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/css/fonts.css"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/css/main.css"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/css/refinements.css"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/js/app.js"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/js/url.js"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/js/api.js"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/fonts/font-0.ttf"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/fonts/font-8.ttf"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college asset /assets/images/favicon.svg"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college stylesheet dependencies are base-relative"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /.env"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /.git/config"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /app/bootstrap.php"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /vendor/autoload.php"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /bin/migrate.php"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /config/database.php"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /database/migrations/001_initial.sql"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /storage/mysql/mysql/user.frm"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /storage/logs/application.log"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /storage/backups/preview-verification.sql.gz"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /tests/fixtures.php"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /composer.json"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /public/index.php"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college private path denied: /README.md"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college missing static asset is not falsely successful"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college prefixed API 404 is JSON"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college HEAD keeps GET route semantics without a body"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college routing preserves query parameters"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college false-like terms are not accepted as consent"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college malformed password confirmation is a validation error"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration requires CSRF"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college cross-site mutations rejected"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college actual registration succeeds"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration redirect is absolute and correctly prefixed"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college all authentication/CSRF cookies use the mount path"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college cookie Secure matches the verified deployment mode"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college cookies preserve HttpOnly and SameSite=Lax"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration writes a real account"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college stored password is an Argon2id hash"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration invents no XP"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration schema relationship: user_preferences"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration schema relationship: study_schedules"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration schema relationship: notification_preferences"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration schema relationship: onboarding_responses"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration schema relationship: referral_codes"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college registration schema relationship: auth_sessions"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college onboarding submission works"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college learner page /dashboard"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college generated URLs stay inside the installation: /dashboard"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college learner page /paths/web-development-foundations"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college generated URLs stay inside the installation: /paths/web-development-foundations"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college learner page /lessons/1"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college generated URLs stay inside the installation: /lessons/1"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college learner page /portfolio"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college generated URLs stay inside the installation: /portfolio"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college learner page /settings"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college generated URLs stay inside the installation: /settings"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college learner page /referrals"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college generated URLs stay inside the installation: /referrals"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college learner page /notifications"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college generated URLs stay inside the installation: /notifications"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college referral share URL uses APP_URL, not browser origin"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college logout redirect"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college actual login succeeds"
+    },
+    {
+      "passed": true,
+      "name": "localhost:8443/college normalised duplicate email fails honestly"
+    },
+    {
+      "passed": true,
+      "name": "Concurrent duplicate signup yields one account and one explicit rejection"
+    },
+    {
+      "passed": true,
+      "name": "Concurrent duplicate signup persists exactly one user"
+    },
+    {
+      "passed": true,
+      "name": "A failed session write has a safe diagnostic reference, not fabricated success"
+    },
+    {
+      "passed": true,
+      "name": "A failed session write rolls back the complete new account"
+    },
+    {
+      "passed": true,
+      "name": "The response reference resolves to useful private diagnostics"
+    },
+    {
+      "passed": true,
+      "name": "Failure response/logging omit passwords and public SQL/stack details"
+    }
+  ]
+}

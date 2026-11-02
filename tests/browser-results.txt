@@ -1,0 +1,92 @@
+PASS Landing has no horizontal overflow at 1440px
+AUDIT Landing desktop []
+PASS Hero product illustration fits within its preview card
+PASS Landing has no horizontal overflow at 768px
+PASS Landing has no horizontal overflow at 390px
+PASS Landing has no horizontal overflow at 360px
+PASS Mobile navigation opens
+PASS Escape closes mobile navigation
+AUDIT Registration []
+PASS Browser registration redirects to onboarding
+AUDIT Onboarding interests []
+PASS Onboarding progress survives a browser reload
+PASS All eight onboarding steps complete through the UI
+PASS Dashboard renders the signed-in learner’s name
+PASS Learner dashboard fits desktop
+AUDIT Learner dashboard []
+PASS Continue learning opens the next accessible lesson
+PASS Notes autosave from real input
+PASS Navigation flushes pending notes before leaving the lesson
+AUDIT Lesson []
+PASS Lesson completion works through the UI
+PASS Quiz navigation, confirmation and server-graded result work in the browser
+PASS A new portfolio project is private by default
+AUDIT Schedule []
+PASS /dashboard fits 768px
+PASS /paths/web-development-foundations fits 768px
+PASS /lessons/1 fits 768px
+PASS /quizzes/1 fits 768px
+PASS /portfolio fits 768px
+PASS /settings fits 768px
+PASS /community fits 768px
+PASS /referrals fits 768px
+PASS /certificates fits 768px
+PASS /reports fits 768px
+PASS /dashboard fits 390px
+AUDIT Mobile /dashboard []
+PASS /paths/web-development-foundations fits 390px
+AUDIT Mobile /paths/web-development-foundations []
+PASS /lessons/1 fits 390px
+AUDIT Mobile /lessons/1 []
+PASS /quizzes/1 fits 390px
+AUDIT Mobile /quizzes/1 []
+PASS /portfolio fits 390px
+AUDIT Mobile /portfolio []
+PASS /settings fits 390px
+AUDIT Mobile /settings []
+PASS /community fits 390px
+AUDIT Mobile /community []
+PASS /referrals fits 390px
+AUDIT Mobile /referrals []
+PASS /certificates fits 390px
+AUDIT Mobile /certificates []
+PASS /reports fits 390px
+AUDIT Mobile /reports []
+PASS /dashboard fits 360px
+PASS /paths/web-development-foundations fits 360px
+PASS /lessons/1 fits 360px
+PASS /quizzes/1 fits 360px
+PASS /portfolio fits 360px
+PASS /settings fits 360px
+PASS /community fits 360px
+PASS /referrals fits 360px
+PASS /certificates fits 360px
+PASS /reports fits 360px
+PASS Mobile learner sidebar opens
+PASS Escape closes learner sidebar
+PASS Administrator signs into the admin workspace
+AUDIT Admin overview []
+PASS Admin metadata editor saves a new record through the UI
+AUDIT Admin content editor []
+AUDIT Admin question builder []
+PASS Vanilla question builder persists a boolean question
+PASS /admin fits mobile admin
+AUDIT Mobile /admin []
+PASS /admin/users fits mobile admin
+AUDIT Mobile /admin/users []
+PASS /admin/content/paths fits mobile admin
+AUDIT Mobile /admin/content/paths []
+PASS /admin/content/lessons/1/edit fits mobile admin
+AUDIT Mobile /admin/content/lessons/1/edit []
+PASS /admin/reviews fits mobile admin
+AUDIT Mobile /admin/reviews []
+PASS /admin/rewards fits mobile admin
+AUDIT Mobile /admin/rewards []
+PASS /admin/settings fits mobile admin
+AUDIT Mobile /admin/settings []
+PASS /admin/reports fits mobile admin
+AUDIT Mobile /admin/reports []
+PASS No uncaught JavaScript errors across browser journeys
+PASS No server 500 errors across browser journeys
+
+63 passed; 0 failed. Accessibility findings are recorded separately.

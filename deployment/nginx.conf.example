@@ -1,0 +1,38 @@
+# Example only. Replace hostname, directories, certificate files and PHP socket.
+# Add a separate default_server that rejects unknown hostnames.
+server {
+    listen 80;
+    server_name learnow.example;
+    return 301 https://learnow.example$request_uri;
+}
+server {
+    listen 443 ssl;
+    server_name learnow.example;
+    ssl_certificate /etc/letsencrypt/live/learnow.example/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/learnow.example/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    root /ABSOLUTE/PATH/TO/PROJECT/public;
+    index index.php;
+    autoindex off;
+    client_max_body_size 6m;
+
+    location ~ /\. { deny all; }
+    # Preserve REQUEST_URI, including a configured APP_URL prefix.
+    location / { try_files $uri /index.php$is_args$args; }
+    location = /index.php {
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root/index.php;
+        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
+        fastcgi_read_timeout 60s;
+    }
+    # Do not allow execution of another PHP file, even if it is accidentally copied.
+    location ~ \.php$ { return 404; }
+    location /assets/ {
+        try_files $uri /index.php$is_args$args;
+        add_header X-Content-Type-Options nosniff always;
+        add_header Cache-Control "public, max-age=300, must-revalidate";
+    }
+    gzip on;
+    gzip_types text/css application/javascript application/json image/svg+xml;
+}

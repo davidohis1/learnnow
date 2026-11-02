@@ -1,0 +1,67 @@
+{
+  "files_scanned": 109,
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "passed": true,
+      "name": "No raw root-relative rendered links, asset attributes, HTTP form actions or endpoint attributes",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "Stylesheets have no root-relative URL dependencies",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "No independent PHP URL concatenation reads APP_URL outside the central service",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "Application logic contains no preview domain, workspace path or preview origin",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "The shared fetch wrapper resolves through the APP_URL client service",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "Client response redirects are validated centrally",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "Server Location headers are generated centrally",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "Front controller normalises the configured mount before dispatch",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "Authentication/CSRF cookie paths follow the configured mount",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "Queued notification links resolve at actual delivery time",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": ".htaccess uses no host-dependent Options/php_value/RewriteBase directive",
+      "details": []
+    },
+    {
+      "passed": true,
+      "name": "public/.htaccess uses no host-dependent Options/php_value/RewriteBase directive",
+      "details": []
+    }
+  ]
+}

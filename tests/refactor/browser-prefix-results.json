@@ -1,0 +1,258 @@
+{
+  "checks": [
+    {
+      "passed": true,
+      "name": "Landing has no horizontal overflow at 1440px"
+    },
+    {
+      "passed": true,
+      "name": "Hero product illustration fits within its preview card"
+    },
+    {
+      "passed": true,
+      "name": "Landing has no horizontal overflow at 768px"
+    },
+    {
+      "passed": true,
+      "name": "Landing has no horizontal overflow at 390px"
+    },
+    {
+      "passed": true,
+      "name": "Landing has no horizontal overflow at 360px"
+    },
+    {
+      "passed": true,
+      "name": "Mobile navigation opens"
+    },
+    {
+      "passed": true,
+      "name": "Escape closes mobile navigation"
+    },
+    {
+      "passed": true,
+      "name": "Browser registration redirects to onboarding"
+    },
+    {
+      "passed": true,
+      "name": "Onboarding progress survives a browser reload"
+    },
+    {
+      "passed": true,
+      "name": "All eight onboarding steps complete through the UI"
+    },
+    {
+      "passed": true,
+      "name": "Dashboard renders the signed-in learner\u2019s name"
+    },
+    {
+      "passed": true,
+      "name": "Learner dashboard fits desktop"
+    },
+    {
+      "passed": true,
+      "name": "Continue learning opens the next accessible lesson"
+    },
+    {
+      "passed": true,
+      "name": "Notes autosave from real input"
+    },
+    {
+      "passed": true,
+      "name": "Navigation flushes pending notes before leaving the lesson"
+    },
+    {
+      "passed": true,
+      "name": "Lesson completion works through the UI"
+    },
+    {
+      "passed": true,
+      "name": "Quiz navigation, confirmation and server-graded result work in the browser"
+    },
+    {
+      "passed": true,
+      "name": "A new portfolio project is private by default"
+    },
+    {
+      "passed": true,
+      "name": "/dashboard fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/paths/web-development-foundations fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/lessons/1 fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/quizzes/1 fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/portfolio fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/settings fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/community fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/referrals fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/certificates fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/reports fits 768px"
+    },
+    {
+      "passed": true,
+      "name": "/dashboard fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/paths/web-development-foundations fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/lessons/1 fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/quizzes/1 fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/portfolio fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/settings fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/community fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/referrals fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/certificates fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/reports fits 390px"
+    },
+    {
+      "passed": true,
+      "name": "/dashboard fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/paths/web-development-foundations fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/lessons/1 fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/quizzes/1 fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/portfolio fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/settings fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/community fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/referrals fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/certificates fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "/reports fits 360px"
+    },
+    {
+      "passed": true,
+      "name": "Mobile learner sidebar opens"
+    },
+    {
+      "passed": true,
+      "name": "Escape closes learner sidebar"
+    },
+    {
+      "passed": true,
+      "name": "Administrator signs into the admin workspace"
+    },
+    {
+      "passed": true,
+      "name": "Admin metadata editor saves a new record through the UI"
+    },
+    {
+      "passed": true,
+      "name": "Vanilla question builder persists a boolean question"
+    },
+    {
+      "passed": true,
+      "name": "/admin fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "/admin/users fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "/admin/content/paths fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "/admin/content/lessons/1/edit fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "/admin/reviews fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "/admin/rewards fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "/admin/settings fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "/admin/reports fits mobile admin"
+    },
+    {
+      "passed": true,
+      "name": "No uncaught JavaScript errors across browser journeys"
+    },
+    {
+      "passed": true,
+      "name": "No server 500 errors across browser journeys"
+    }
+  ],
+  "js_errors": [],
+  "server_errors": []
+}

@@ -1,0 +1,1147 @@
+[
+  {
+    "file": "app/Views/components/path-card.php",
+    "attribute": "href",
+    "value": "/paths/<?= e($path['slug']) ?>"
+  },
+  {
+    "file": "app/Views/components/path-card.php",
+    "attribute": "href",
+    "value": "/paths/<?= e($path['slug']) ?>"
+  },
+  {
+    "file": "app/Views/components/sidebar.php",
+    "attribute": "href",
+    "value": "<?= $link[1] ?>"
+  },
+  {
+    "file": "app/Views/components/sidebar.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/components/sidebar.php",
+    "attribute": "href",
+    "value": "<?= $isAdmin?'/admin/settings':'/settings' ?>"
+  },
+  {
+    "file": "app/Views/components/sidebar.php",
+    "attribute": "href",
+    "value": "<?= $isAdmin?'/dashboard':'/help' ?>"
+  },
+  {
+    "file": "app/Views/components/sidebar.php",
+    "attribute": "href",
+    "value": "/admin"
+  },
+  {
+    "file": "app/Views/components/sidebar.php",
+    "attribute": "action",
+    "value": "/api/auth/logout"
+  },
+  {
+    "file": "app/Views/components/admin-content-tabs.php",
+    "attribute": "href",
+    "value": "/admin/content/<?= e($key) ?>"
+  },
+  {
+    "file": "app/Views/components/head.php",
+    "attribute": "href",
+    "value": "/assets/images/favicon.svg"
+  },
+  {
+    "file": "app/Views/components/head.php",
+    "attribute": "href",
+    "value": "/assets/css/fonts.css"
+  },
+  {
+    "file": "app/Views/components/head.php",
+    "attribute": "href",
+    "value": "/assets/css/main.css"
+  },
+  {
+    "file": "app/Views/components/head.php",
+    "attribute": "href",
+    "value": "/assets/css/refinements.css"
+  },
+  {
+    "file": "app/Views/components/head.php",
+    "attribute": "src",
+    "value": "/assets/js/app.js"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "action",
+    "value": "/api/paths/<?= (int)$path['id'] ?>/enrol"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "href",
+    "value": "/lessons/<?= (int)$next['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "href",
+    "value": "#learning-map"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "href",
+    "value": "/lessons/'.(int)$l['id'].'"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "href",
+    "value": "/quizzes/'.(int)$q['id'].'"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "href",
+    "value": "/assignments/'.(int)$a['id'].'"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "href",
+    "value": "#stage-<?= (int)$node['stage_id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/path.php",
+    "attribute": "action",
+    "value": "/api/certificates/<?= (int)$path['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/auth.php",
+    "attribute": "action",
+    "value": "/api/auth/<?= e(match($mode){'register'=>'register','forgot'=>'forgot','reset'=>'reset',default=>'login'}) ?>"
+  },
+  {
+    "file": "app/Views/pages/auth.php",
+    "attribute": "href",
+    "value": "/forgot-password"
+  },
+  {
+    "file": "app/Views/pages/auth.php",
+    "attribute": "href",
+    "value": "/terms"
+  },
+  {
+    "file": "app/Views/pages/auth.php",
+    "attribute": "href",
+    "value": "/privacy"
+  },
+  {
+    "file": "app/Views/pages/auth.php",
+    "attribute": "href",
+    "value": "/login"
+  },
+  {
+    "file": "app/Views/pages/auth.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/pages/auth.php",
+    "attribute": "href",
+    "value": "/login"
+  },
+  {
+    "file": "app/Views/pages/peer-review.php",
+    "attribute": "href",
+    "value": "/community"
+  },
+  {
+    "file": "app/Views/pages/peer-review.php",
+    "attribute": "href",
+    "value": "<?= e($review['snapshot_url']) ?>"
+  },
+  {
+    "file": "app/Views/pages/peer-review.php",
+    "attribute": "href",
+    "value": "<?= e($review['snapshot_repository']) ?>"
+  },
+  {
+    "file": "app/Views/pages/peer-review.php",
+    "attribute": "action",
+    "value": "/api/reviews/<?= (int)$review['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-rewards.php",
+    "attribute": "href",
+    "value": "/admin/content/achievements"
+  },
+  {
+    "file": "app/Views/pages/admin-rewards.php",
+    "attribute": "action",
+    "value": "/api/admin/rewards"
+  },
+  {
+    "file": "app/Views/pages/admin-rewards.php",
+    "attribute": "action",
+    "value": "/api/admin/settings"
+  },
+  {
+    "file": "app/Views/pages/admin-rewards.php",
+    "attribute": "action",
+    "value": "/api/admin/settings"
+  },
+  {
+    "file": "app/Views/pages/admin-rewards.php",
+    "attribute": "href",
+    "value": "/admin/content/levels"
+  },
+  {
+    "file": "app/Views/pages/admin-rewards.php",
+    "attribute": "href",
+    "value": "/admin/content/achievements/<?= (int)$a['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "<?= $next?'/lessons/'.$next['id']:($activePath?'/paths/'.$activePath['slug']:'/paths') ?>"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/reports"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/assignments"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/assignments/<?= (int)$a['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/schedule"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "<?= $next?'/lessons/'.$next['id']:'/paths' ?>"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/schedule"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/schedule"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/achievements"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/achievements"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/achievements"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/referrals"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/pages/dashboard.php",
+    "attribute": "href",
+    "value": "/quizzes/<?= (int)$q['quiz_id'] ?>?attempt=<?= (int)$q['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/assignments.php",
+    "attribute": "href",
+    "value": "/assignments/<?= (int)$a['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/portfolio.php",
+    "attribute": "href",
+    "value": "/portfolio/new"
+  },
+  {
+    "file": "app/Views/pages/portfolio.php",
+    "attribute": "src",
+    "value": "/media/<?= (int)$image ?>"
+  },
+  {
+    "file": "app/Views/pages/portfolio.php",
+    "attribute": "href",
+    "value": "/portfolio/<?= (int)$p['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/portfolio.php",
+    "attribute": "href",
+    "value": "/portfolio/<?= (int)$p['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-referrals.php",
+    "attribute": "action",
+    "value": "/api/admin/referrals/0"
+  },
+  {
+    "file": "app/Views/pages/admin-referrals.php",
+    "attribute": "action",
+    "value": "/api/admin/campaign"
+  },
+  {
+    "file": "app/Views/pages/admin-reviews.php",
+    "attribute": "href",
+    "value": "/admin/quiz-reviews/<?= (int)$q['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-reviews.php",
+    "attribute": "href",
+    "value": "/admin/reviews/<?= (int)$s['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-users.php",
+    "attribute": "href",
+    "value": "/admin/users/<?= (int)$u['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "href",
+    "value": "/guidelines"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "data-api-button",
+    "value": "/api/buddies/<?= (int)$b['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "data-api-button",
+    "value": "/api/buddies/<?= (int)$b['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "data-api-button",
+    "value": "/api/buddies/<?= (int)$b['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "data-api-button",
+    "value": "/api/challenges/<?= (int)$c['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "data-api-button",
+    "value": "/api/challenges/<?= (int)$c['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "href",
+    "value": "/community/reviews/<?= (int)$r['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "action",
+    "value": "/api/buddies"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "action",
+    "value": "/api/challenges"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "action",
+    "value": "/api/community/report"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "href",
+    "value": "/projects/<?= e($p['slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/community.php",
+    "attribute": "href",
+    "value": "/projects/<?= e($p['slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/<?= e($resource) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "action",
+    "value": "/api/admin/content/<?= e($resource) ?>/<?= e($id) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/<?= e($resource) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "action",
+    "value": "/api/admin/quizzes/<?= (int)$record['id'] ?>/questions"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/stages/new?path_id=<?= (int)$record['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/stages/<?= (int)$stage['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/stages/<?= (int)$stage['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/modules/<?= (int)$module['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/lessons/<?= (int)$lesson['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/lessons/new?module_id=<?= (int)$module['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/modules/new?stage_id=<?= (int)$stage['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/quizzes/new?stage_id=<?= (int)$stage['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/admin/content/assignments/new?stage_id=<?= (int)$stage['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-editor.php",
+    "attribute": "href",
+    "value": "/paths/<?= e($record['slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/content/paths/new"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/reports"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/reviews"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/content/paths"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/certificates"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/audit"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/content/paths"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/content/paths/<?= (int)$p['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-dashboard.php",
+    "attribute": "href",
+    "value": "/admin/audit"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "#how-it-works"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/paths?category=<?= e($cat['slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/referrals"
+  },
+  {
+    "file": "app/Views/pages/landing.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/pages/admin-reports.php",
+    "attribute": "href",
+    "value": "/admin/content/paths/<?= (int)$p['id'] ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/info.php",
+    "attribute": "href",
+    "value": "mailto:<?= e($email) ?>"
+  },
+  {
+    "file": "app/Views/pages/info.php",
+    "attribute": "href",
+    "value": "<?= $currentUser?'/dashboard':'/register' ?>"
+  },
+  {
+    "file": "app/Views/pages/verify-email.php",
+    "attribute": "action",
+    "value": "/api/auth/verify"
+  },
+  {
+    "file": "app/Views/pages/verify-email.php",
+    "attribute": "action",
+    "value": "/api/auth/resend"
+  },
+  {
+    "file": "app/Views/pages/verify-email.php",
+    "attribute": "action",
+    "value": "/api/auth/logout"
+  },
+  {
+    "file": "app/Views/pages/admin-community.php",
+    "attribute": "href",
+    "value": "/guidelines"
+  },
+  {
+    "file": "app/Views/pages/admin-community.php",
+    "attribute": "action",
+    "value": "/api/admin/moderate/report/<?= (int)$r['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-community.php",
+    "attribute": "href",
+    "value": "/admin/users/<?= (int)$r['reported_user_id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-community.php",
+    "attribute": "action",
+    "value": "/api/admin/moderate/review/<?= (int)$r['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "href",
+    "value": "/settings"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "href",
+    "value": "/schedule"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "href",
+    "value": "#security"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "href",
+    "value": "#notification-preferences"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "action",
+    "value": "/api/settings"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "action",
+    "value": "/api/settings/password"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "action",
+    "value": "/api/settings/notifications"
+  },
+  {
+    "file": "app/Views/pages/settings.php",
+    "attribute": "href",
+    "value": "/achievements"
+  },
+  {
+    "file": "app/Views/pages/assignment.php",
+    "attribute": "href",
+    "value": "/paths/<?= e($assignment['path_slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/assignment.php",
+    "attribute": "action",
+    "value": "/api/assignments/<?= (int)$assignment['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/assignment.php",
+    "attribute": "href",
+    "value": "/downloads/submissions/<?= (int)$submission['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/assignment.php",
+    "attribute": "href",
+    "value": "<?= e($submission['project_url']) ?>"
+  },
+  {
+    "file": "app/Views/pages/assignment.php",
+    "attribute": "href",
+    "value": "/downloads/submissions/<?= (int)$submission['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-quiz-review.php",
+    "attribute": "href",
+    "value": "/admin/reviews"
+  },
+  {
+    "file": "app/Views/pages/admin-quiz-review.php",
+    "attribute": "action",
+    "value": "/api/admin/quiz-reviews/<?= (int)$attempt['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-quiz-review.php",
+    "attribute": "action",
+    "value": "/api/admin/assign-reviewer/quiz/<?= (int)$attempt['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/achievements.php",
+    "attribute": "action",
+    "value": "/api/protection/buy"
+  },
+  {
+    "file": "app/Views/pages/project.php",
+    "attribute": "href",
+    "value": "<?= e($project['project_url']) ?>"
+  },
+  {
+    "file": "app/Views/pages/project.php",
+    "attribute": "href",
+    "value": "<?= e($project['repository_url']) ?>"
+  },
+  {
+    "file": "app/Views/pages/project.php",
+    "attribute": "src",
+    "value": "/media/<?= (int)$image['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/reports.php",
+    "attribute": "data-api-button",
+    "value": "/api/reports/generate"
+  },
+  {
+    "file": "app/Views/pages/my-learning.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/pages/certificates.php",
+    "attribute": "href",
+    "value": "/verify/<?= e($c['identifier']) ?>"
+  },
+  {
+    "file": "app/Views/pages/certificates.php",
+    "attribute": "action",
+    "value": "/api/certificates/<?= (int)$p['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-content.php",
+    "attribute": "href",
+    "value": "/admin/content/<?= e($resource) ?>/new"
+  },
+  {
+    "file": "app/Views/pages/admin-content.php",
+    "attribute": "action",
+    "value": "/admin/content/<?= e($resource) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-content.php",
+    "attribute": "href",
+    "value": "/admin/content/<?= e($resource) ?>/<?= (int)$id ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-content.php",
+    "attribute": "href",
+    "value": "/admin/content/<?= e($resource) ?>/<?= (int)$id ?>/edit"
+  },
+  {
+    "file": "app/Views/pages/admin-content.php",
+    "attribute": "data-api-button",
+    "value": "/api/admin/paths/<?= (int)$id ?>/duplicate"
+  },
+  {
+    "file": "app/Views/pages/admin-content.php",
+    "attribute": "data-api-button",
+    "value": "/api/admin/content/<?= e($resource) ?>/<?= (int)$id ?>/archive"
+  },
+  {
+    "file": "app/Views/pages/notifications.php",
+    "attribute": "data-api-button",
+    "value": "/api/notifications/read"
+  },
+  {
+    "file": "app/Views/pages/notifications.php",
+    "attribute": "href",
+    "value": "<?= e($n['link']) ?>"
+  },
+  {
+    "file": "app/Views/pages/notifications.php",
+    "attribute": "href",
+    "value": "<?= e($n['link']) ?>"
+  },
+  {
+    "file": "app/Views/pages/project-editor.php",
+    "attribute": "href",
+    "value": "/portfolio"
+  },
+  {
+    "file": "app/Views/pages/project-editor.php",
+    "attribute": "action",
+    "value": "/api/projects/<?= $project?(int)$project['id']:'new' ?>"
+  },
+  {
+    "file": "app/Views/pages/project-editor.php",
+    "attribute": "src",
+    "value": "/media/<?= (int)$image['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/project-editor.php",
+    "attribute": "href",
+    "value": "/portfolio"
+  },
+  {
+    "file": "app/Views/pages/project-editor.php",
+    "attribute": "action",
+    "value": "/api/projects/<?= (int)$project['id'] ?>/reviews"
+  },
+  {
+    "file": "app/Views/pages/project-editor.php",
+    "attribute": "href",
+    "value": "/projects/<?= e($project['slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/project-editor.php",
+    "attribute": "action",
+    "value": "/api/projects/<?= (int)$project['id'] ?>/delete"
+  },
+  {
+    "file": "app/Views/pages/admin-certificates.php",
+    "attribute": "href",
+    "value": "/admin/content/paths"
+  },
+  {
+    "file": "app/Views/pages/admin-certificates.php",
+    "attribute": "href",
+    "value": "/verify/<?= e($c['identifier']) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-certificates.php",
+    "attribute": "action",
+    "value": "/api/admin/certificates/0/revoke"
+  },
+  {
+    "file": "app/Views/pages/error.php",
+    "attribute": "href",
+    "value": "<?= $currentUser?'/dashboard':'/' ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "/paths/<?= e($lesson['path_slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "src",
+    "value": "https://www.youtube-nocookie.com/embed/<?= e($lesson['youtube_id']) ?>?rel=0"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "/quizzes/<?= (int)$q['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "/assignments/<?= (int)$a['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "action",
+    "value": "/api/lessons/<?= (int)$lesson['id'] ?>/complete"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "/lessons/<?= (int)$previous['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "/lessons/<?= (int)$following['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "/paths/<?= e($lesson['path_slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "/lessons/<?= (int)$l['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "action",
+    "value": "/api/lessons/<?= (int)$lesson['id'] ?>/notes"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "data-private-notes",
+    "value": "/api/lessons/<?= (int)$lesson['id'] ?>/notes"
+  },
+  {
+    "file": "app/Views/pages/lesson.php",
+    "attribute": "href",
+    "value": "<?= e($r['url']) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-review.php",
+    "attribute": "href",
+    "value": "/admin/reviews"
+  },
+  {
+    "file": "app/Views/pages/admin-review.php",
+    "attribute": "href",
+    "value": "<?= e($submission['project_url']) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-review.php",
+    "attribute": "href",
+    "value": "/downloads/submissions/<?= (int)$submission['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-review.php",
+    "attribute": "href",
+    "value": "<?= e($h['project_url']) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-review.php",
+    "attribute": "action",
+    "value": "/api/admin/reviews/<?= (int)$submission['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-review.php",
+    "attribute": "action",
+    "value": "/api/admin/assign-reviewer/assignment/<?= (int)$submission['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/catalogue.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/pages/catalogue.php",
+    "attribute": "href",
+    "value": "/paths?category=<?= e($category['slug']) ?>"
+  },
+  {
+    "file": "app/Views/pages/catalogue.php",
+    "attribute": "action",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/pages/admin-user.php",
+    "attribute": "href",
+    "value": "/admin/users"
+  },
+  {
+    "file": "app/Views/pages/admin-user.php",
+    "attribute": "href",
+    "value": "/admin/reviews/<?= (int)$s['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-user.php",
+    "attribute": "href",
+    "value": "/verify/<?= e($c['identifier']) ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-user.php",
+    "attribute": "action",
+    "value": "/api/admin/users/<?= (int)$learner['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-user.php",
+    "attribute": "action",
+    "value": "/api/admin/users/<?= (int)$learner['id'] ?>/override"
+  },
+  {
+    "file": "app/Views/pages/quiz.php",
+    "attribute": "href",
+    "value": "/paths/<?= e(\\Learnow\\Repositories\\DB::value('SELECT slug FROM learning_paths WHERE id=?',[$quiz['path_id']])) ?>"
+  },
+  {
+    "file": "app/Views/pages/quiz.php",
+    "attribute": "action",
+    "value": "/api/quizzes/<?= (int)$quiz['id'] ?>/start"
+  },
+  {
+    "file": "app/Views/pages/quiz.php",
+    "attribute": "action",
+    "value": "/api/attempts/<?= (int)$attempt['id'] ?>/submit"
+  },
+  {
+    "file": "app/Views/pages/quiz.php",
+    "attribute": "href",
+    "value": "/paths/<?= e(\\Learnow\\Repositories\\DB::value('SELECT slug FROM learning_paths WHERE id=?',[$quiz['path_id']])) ?>"
+  },
+  {
+    "file": "app/Views/pages/quiz.php",
+    "attribute": "action",
+    "value": "/api/quizzes/<?= (int)$quiz['id'] ?>/start"
+  },
+  {
+    "file": "app/Views/pages/quiz.php",
+    "attribute": "href",
+    "value": "/quizzes/<?= (int)$quiz['id'] ?>?attempt=<?= (int)$a['id'] ?>"
+  },
+  {
+    "file": "app/Views/pages/admin-settings.php",
+    "attribute": "action",
+    "value": "/api/admin/settings"
+  },
+  {
+    "file": "app/Views/pages/admin-settings.php",
+    "attribute": "action",
+    "value": "/api/admin/settings"
+  },
+  {
+    "file": "app/Views/layouts/auth.php",
+    "attribute": "href",
+    "value": "#main"
+  },
+  {
+    "file": "app/Views/layouts/auth.php",
+    "attribute": "href",
+    "value": "/"
+  },
+  {
+    "file": "app/Views/layouts/auth.php",
+    "attribute": "href",
+    "value": "/privacy"
+  },
+  {
+    "file": "app/Views/layouts/auth.php",
+    "attribute": "href",
+    "value": "/help"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "#main"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/#features"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/#how-it-works"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/#why-learnow"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "<?= $currentUser?'/dashboard':'/login' ?>"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/dashboard"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/login"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/#features"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/#how-it-works"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/about"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/login"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/help"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/contact"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/register"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/privacy"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/terms"
+  },
+  {
+    "file": "app/Views/layouts/public.php",
+    "attribute": "href",
+    "value": "/guidelines"
+  },
+  {
+    "file": "app/Views/layouts/app.php",
+    "attribute": "href",
+    "value": "#main"
+  },
+  {
+    "file": "app/Views/layouts/app.php",
+    "attribute": "action",
+    "value": "/paths"
+  },
+  {
+    "file": "app/Views/layouts/app.php",
+    "attribute": "href",
+    "value": "/notifications"
+  },
+  {
+    "file": "app/Views/layouts/app.php",
+    "attribute": "href",
+    "value": "/settings"
+  },
+  {
+    "file": "app/Views/layouts/onboarding.php",
+    "attribute": "action",
+    "value": "/api/auth/logout"
+  },
+  {
+    "file": "app/Views/layouts/admin.php",
+    "attribute": "href",
+    "value": "#main"
+  },
+  {
+    "file": "app/Views/layouts/admin.php",
+    "attribute": "href",
+    "value": "/"
+  }
+]

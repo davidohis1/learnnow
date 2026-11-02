@@ -1,0 +1,878 @@
+{
+  "passed": 218,
+  "failed": 0,
+  "checks": [
+    {
+      "passed": true,
+      "name": "Page / returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /paths returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /about returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /help returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /contact returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /privacy returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /terms returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /guidelines returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /register returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /login returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /forgot-password returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /reset-password returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /paths?q=web returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Private deployment files stay outside the public document root: /.env"
+    },
+    {
+      "passed": true,
+      "name": "Private deployment files stay outside the public document root: /storage/uploads/unknown.txt"
+    },
+    {
+      "passed": true,
+      "name": "Private deployment files stay outside the public document root: /vendor/autoload.php"
+    },
+    {
+      "passed": true,
+      "name": "Private deployment files stay outside the public document root: /.git/config"
+    },
+    {
+      "passed": true,
+      "name": "Secure response headers are applied"
+    },
+    {
+      "passed": true,
+      "name": "Page /dashboard returns 303"
+    },
+    {
+      "passed": true,
+      "name": "Guests are redirected to sign in"
+    },
+    {
+      "passed": true,
+      "name": "Missing CSRF token is rejected"
+    },
+    {
+      "passed": true,
+      "name": "Cross-site mutations are rejected even with a CSRF token"
+    },
+    {
+      "passed": true,
+      "name": "Unknown-account login errors are generic"
+    },
+    {
+      "passed": true,
+      "name": "Unconfigured email recovery is honestly reported"
+    },
+    {
+      "passed": true,
+      "name": "Registration creates a learner: HTTP owner"
+    },
+    {
+      "passed": true,
+      "name": "Registration creates a learner: HTTP other"
+    },
+    {
+      "passed": true,
+      "name": "Registration requires explicit terms acceptance"
+    },
+    {
+      "passed": true,
+      "name": "Normalised duplicate email addresses cannot create a second account"
+    },
+    {
+      "passed": true,
+      "name": "Email verification tokens are bound to their account owner"
+    },
+    {
+      "passed": true,
+      "name": "A valid, hash-stored verification token verifies the intended email"
+    },
+    {
+      "passed": true,
+      "name": "Email verification tokens are one-time use"
+    },
+    {
+      "passed": true,
+      "name": "Registration ignores forged roles and XP"
+    },
+    {
+      "passed": true,
+      "name": "JWT cookies use HttpOnly and SameSite=Lax"
+    },
+    {
+      "passed": true,
+      "name": "New learners must complete onboarding before the dashboard"
+    },
+    {
+      "passed": true,
+      "name": "Onboarding preferences persist midway"
+    },
+    {
+      "passed": true,
+      "name": "Onboarding resumes from the saved step"
+    },
+    {
+      "passed": true,
+      "name": "Onboarding finishes and enrols the selected path"
+    },
+    {
+      "passed": true,
+      "name": "Second learner completes onboarding"
+    },
+    {
+      "passed": true,
+      "name": "Page /dashboard returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /my-learning returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /paths returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /paths/web-development-foundations returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /achievements returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /certificates returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /referrals returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /notifications returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /reports returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /schedule returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /settings returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /portfolio returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /portfolio/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /community returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /assignments returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Learner role is denied /admin"
+    },
+    {
+      "passed": true,
+      "name": "Learner role is denied /admin/users"
+    },
+    {
+      "passed": true,
+      "name": "Learner role is denied /admin/reviews"
+    },
+    {
+      "passed": true,
+      "name": "Learner role is denied /admin/settings"
+    },
+    {
+      "passed": true,
+      "name": "Learner role is denied /admin/content/paths"
+    },
+    {
+      "passed": true,
+      "name": "Learners cannot mutate admin settings"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/users returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/users/23 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/reviews returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/rewards returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/settings returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/referrals returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/certificates returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/community returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/audit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/reports returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Missing records produce honest admin errors: /api/admin/content/paths/99999999/archive"
+    },
+    {
+      "passed": true,
+      "name": "Missing records produce honest admin errors: /api/admin/assign-reviewer/quiz/99999999"
+    },
+    {
+      "passed": true,
+      "name": "Missing records produce honest admin errors: /api/admin/certificates/99999999/revoke"
+    },
+    {
+      "passed": true,
+      "name": "Missing records produce honest admin errors: /api/admin/moderate/report/99999999"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/paths returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/paths/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/paths/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/categories returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/categories/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/categories/7/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/stages returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/stages/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/stages/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/modules returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/modules/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/modules/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/lessons returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/lessons/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/lessons/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/quizzes returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/quizzes/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/quizzes/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/assignments returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/assignments/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/assignments/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/achievements returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/achievements/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/achievements/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/levels returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/levels/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/levels/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/skills returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/skills/new returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/content/skills/1/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Reviewers cannot manage accounts"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates paths"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates stages"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates modules"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates lessons"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates stages"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates modules"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates lessons"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates quizzes"
+    },
+    {
+      "passed": true,
+      "name": "Admin saves all four question types"
+    },
+    {
+      "passed": true,
+      "name": "Admin publishes a valid quiz"
+    },
+    {
+      "passed": true,
+      "name": "Admin creates assignments"
+    },
+    {
+      "passed": true,
+      "name": "Published admin-created paths appear in the public catalogue"
+    },
+    {
+      "passed": true,
+      "name": "Learner enrols in an admin-created path"
+    },
+    {
+      "passed": true,
+      "name": "Another learner enrols independently"
+    },
+    {
+      "passed": true,
+      "name": "Page visits and onboarding do not earn XP or invent activity"
+    },
+    {
+      "passed": true,
+      "name": "HTTP lesson route enforces locked stages"
+    },
+    {
+      "passed": true,
+      "name": "Direct completion cannot bypass a locked stage"
+    },
+    {
+      "passed": true,
+      "name": "Private notes are saved for the authenticated owner"
+    },
+    {
+      "passed": true,
+      "name": "Notes are isolated even when a forged owner ID is supplied"
+    },
+    {
+      "passed": true,
+      "name": "Optimistic note versions prevent a stale tab overwriting newer notes"
+    },
+    {
+      "passed": true,
+      "name": "Rejected stale notes do not mutate saved text"
+    },
+    {
+      "passed": true,
+      "name": "The server rejects incomplete lesson checklists"
+    },
+    {
+      "passed": true,
+      "name": "Checklist item persists"
+    },
+    {
+      "passed": true,
+      "name": "Checklist item persists"
+    },
+    {
+      "passed": true,
+      "name": "A completed lesson awards eligible server-side credit"
+    },
+    {
+      "passed": true,
+      "name": "Duplicate completion succeeds idempotently"
+    },
+    {
+      "passed": true,
+      "name": "Forged XP and duplicate HTTP submissions do not inflate rewards"
+    },
+    {
+      "passed": true,
+      "name": "Page /quizzes/6 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Learner starts the mixed quiz"
+    },
+    {
+      "passed": true,
+      "name": "Quiz answer keys and explanations are absent before submission"
+    },
+    {
+      "passed": true,
+      "name": "HTTP attempt ownership prevents answer submission by another learner"
+    },
+    {
+      "passed": true,
+      "name": "Learner submits mixed answers for real grading"
+    },
+    {
+      "passed": true,
+      "name": "Client-supplied result fields cannot bypass manual review"
+    },
+    {
+      "passed": true,
+      "name": "Page /quizzes/6?attempt=5 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Unassigned reviewers cannot grade a written answer"
+    },
+    {
+      "passed": true,
+      "name": "Administrator explicitly assigns a quiz reviewer"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/quiz-reviews/5 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Assigned reviewer grades the written response"
+    },
+    {
+      "passed": true,
+      "name": "Manual grading updates the actual quiz result"
+    },
+    {
+      "passed": true,
+      "name": "Page /assignments/4 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Executable uploads are rejected by actual file-content inspection"
+    },
+    {
+      "passed": true,
+      "name": "Supported multipart assignment uploads are accepted"
+    },
+    {
+      "passed": true,
+      "name": "Page /downloads/submissions/3 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Private attachments are served as downloads"
+    },
+    {
+      "passed": true,
+      "name": "Another learner cannot download private submission files"
+    },
+    {
+      "passed": true,
+      "name": "An unassigned reviewer cannot view submitted work"
+    },
+    {
+      "passed": true,
+      "name": "Administrator assigns an official assignment reviewer"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/reviews/3 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /downloads/submissions/3 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Official assignment acceptance records real feedback"
+    },
+    {
+      "passed": true,
+      "name": "Required quiz and assignment completion unlock the next stage"
+    },
+    {
+      "passed": true,
+      "name": "Learner finishes the required follow-up lesson"
+    },
+    {
+      "passed": true,
+      "name": "The server issues an eligibility-checked certificate"
+    },
+    {
+      "passed": true,
+      "name": "Page http://127.0.0.1:8084/classroom/skills/verify/e0f79c00f23fbbbc41b8b9b609b0e333 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Public certificate verification shows its issuance snapshot"
+    },
+    {
+      "passed": true,
+      "name": "Administrator revokes a certificate with an audit reason"
+    },
+    {
+      "passed": true,
+      "name": "Public verification reflects certificate revocation"
+    },
+    {
+      "passed": true,
+      "name": "A learner creates a private portfolio project"
+    },
+    {
+      "passed": true,
+      "name": "Private portfolio pages are hidden from guests"
+    },
+    {
+      "passed": true,
+      "name": "Another learner cannot open the project editor"
+    },
+    {
+      "passed": true,
+      "name": "Portfolio edits enforce ownership on the server"
+    },
+    {
+      "passed": true,
+      "name": "Page http://127.0.0.1:8084/classroom/skills/portfolio/5/edit returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Portfolio images are validated and stored privately"
+    },
+    {
+      "passed": true,
+      "name": "Private project images cannot be guessed by URL"
+    },
+    {
+      "passed": true,
+      "name": "A project owner can explicitly publish their project"
+    },
+    {
+      "passed": true,
+      "name": "Page /projects/private-http-test-project-47c763db1c returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /media/3 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Administrator configures peer-review eligibility"
+    },
+    {
+      "passed": true,
+      "name": "A project owner explicitly requests peer feedback"
+    },
+    {
+      "passed": true,
+      "name": "Peer assignment excludes self-reviews"
+    },
+    {
+      "passed": true,
+      "name": "Page /community/reviews/3 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "A project owner cannot submit their own assigned peer review"
+    },
+    {
+      "passed": true,
+      "name": "An assigned peer submits the complete configured rubric"
+    },
+    {
+      "passed": true,
+      "name": "A submitted peer review cannot be duplicated"
+    },
+    {
+      "passed": true,
+      "name": "Peer feedback never awards official completion or assignment XP"
+    },
+    {
+      "passed": true,
+      "name": "Project owners can read submitted peer feedback"
+    },
+    {
+      "passed": true,
+      "name": "Administrators can hide a peer review with a recorded reason"
+    },
+    {
+      "passed": true,
+      "name": "Hidden peer reviews are no longer visible to reviewers"
+    },
+    {
+      "passed": true,
+      "name": "Buddy invitation does not expose account enumeration"
+    },
+    {
+      "passed": true,
+      "name": "The inviter cannot accept their own buddy request"
+    },
+    {
+      "passed": true,
+      "name": "The invited buddy explicitly accepts"
+    },
+    {
+      "passed": true,
+      "name": "Accepted buddies can propose a lesson challenge"
+    },
+    {
+      "passed": true,
+      "name": "A challenge needs the invited learner\u2019s consent"
+    },
+    {
+      "passed": true,
+      "name": "Learners can block a buddy"
+    },
+    {
+      "passed": true,
+      "name": "Blocked relationships cannot create new challenges"
+    },
+    {
+      "passed": true,
+      "name": "Learner reports reach the moderation queue"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/community returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/certificates returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/reviews returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Page /admin/users/23 returns 200"
+    },
+    {
+      "passed": true,
+      "name": "A real previous-week report can be generated on demand"
+    },
+    {
+      "passed": true,
+      "name": "Page /reports returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Administrators cannot remove their own access"
+    },
+    {
+      "passed": true,
+      "name": "Suspension revokes the learner\u2019s active sessions"
+    },
+    {
+      "passed": true,
+      "name": "A suspended account cannot use an old signed JWT"
+    },
+    {
+      "passed": true,
+      "name": "A modified JWT signature is rejected"
+    },
+    {
+      "passed": true,
+      "name": "Unsigned alg-none JWTs are rejected"
+    },
+    {
+      "passed": true,
+      "name": "JWT validation rejects expired"
+    },
+    {
+      "passed": true,
+      "name": "JWT validation rejects not yet valid"
+    },
+    {
+      "passed": true,
+      "name": "JWT validation rejects wrong issuer"
+    },
+    {
+      "passed": true,
+      "name": "JWT validation rejects wrong audience"
+    },
+    {
+      "passed": true,
+      "name": "JWT validation rejects mismatched subject"
+    },
+    {
+      "passed": true,
+      "name": "JWT validation rejects wrong signing algorithm"
+    },
+    {
+      "passed": true,
+      "name": "JWT validation rejects missing expiration"
+    },
+    {
+      "passed": true,
+      "name": "Page /dashboard returns 200"
+    },
+    {
+      "passed": true,
+      "name": "Refresh tokens rotate when a session is renewed"
+    },
+    {
+      "passed": true,
+      "name": "A reused refresh token is rejected"
+    },
+    {
+      "passed": true,
+      "name": "Refresh-token replay revokes the complete affected session"
+    },
+    {
+      "passed": true,
+      "name": "An eligible password reset token changes the password"
+    },
+    {
+      "passed": true,
+      "name": "Password reset revokes existing sign-in sessions"
+    },
+    {
+      "passed": true,
+      "name": "A consumed reset token cannot be reused"
+    },
+    {
+      "passed": true,
+      "name": "Logout succeeds with CSRF protection"
+    },
+    {
+      "passed": true,
+      "name": "Revoked logout cookies cannot replay a session"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+PASS Email addresses are trimmed and normalised
+PASS Short passwords are rejected
+PASS Javascript URLs are rejected
+PASS URLs with embedded credentials are rejected
+PASS YouTube input is parsed into a validated identifier
+PASS Lookalike YouTube hosts are rejected
+PASS Lesson content escapes stored HTML
+PASS Unenrolled learners cannot access lessons
+PASS Enrolment is idempotent
+PASS Later stages enforce prerequisites on the server
+PASS Individual lesson prerequisites are enforced
+PASS The learning map marks a prerequisite-locked lesson as locked
+PASS Required checklist completion is checked on the server
+PASS First completion and achievement award once, including repeated requests
+PASS The learning map unlocks a lesson after its prerequisites are completed
+PASS Duplicate completions do not inflate daily activity
+PASS Required quiz blocks stage access after lessons alone
+PASS An active quiz attempt is resumed instead of duplicated
+PASS A learner cannot submit another learner’s quiz attempt
+PASS Answers must belong to the specified question
+PASS Objective answers are graded correctly on the server
+PASS Submitted attempts are immutable and cannot reward twice
+PASS Stage completes only after all configured requirements
+PASS Completing prerequisites unlocks the next stage
+PASS Retrying a passed quiz does not generate another reward
+PASS Quiz questions lock after the first attempt
+PASS Expired quiz deadlines are enforced server-side
+PASS Short answers wait for manual review and do not award premature XP
+PASS Manual scores cannot exceed question points
+PASS Manual grades produce a server-calculated final result
+PASS Certificates are denied while required assignments are incomplete
+PASS Assignment drafts are persisted
+PASS Submitted work does not earn approval credit
+PASS Submitted assignment versions are locked against learner editing
+PASS Revision remains a resubmission even after saving an intermediate draft
+PASS Assignment acceptance requires the configured minimum score
+PASS Accepted assignments award configured XP once
+PASS Complete path requirements are recognised
+PASS Eligible certificate identifiers are unique and issuance is idempotent
+PASS Certificate issuance is audited once
+PASS A revoked certificate cannot be silently reissued
+PASS Local goals cross midnight in the learner timezone, not UTC
+PASS Learners west of UTC retain the correct earlier local day
+PASS Weekly report bounds handle a 167-hour daylight-saving week
+PASS Weekly report bounds handle a 169-hour daylight-saving week
+PASS Activity dates respect the learner’s IANA timezone
+PASS Consecutive local calendar days generate the correct streak
+PASS A streak milestone is awarded once
+PASS One held protection covers one eligible missed day
+PASS Repeated streak recalculation never consumes protection twice
+PASS Quiz attempt limits are enforced before another start
+PASS Zero lives block only an opted-in quiz attempt
+PASS Zero quiz lives do not block essential lessons
+PASS Quiz lives recover from elapsed server time
+PASS An assessment linked to a locked lesson also enforces that lesson’s prerequisites
+PASS Referral rewards wait for required email verification
+PASS Eligible referral rewards are transactional and idempotent
+PASS Database constraints reject self-referrals
+PASS Campaign caps prevent excess referral rewards
+PASS Circular stage prerequisite graphs are rejected
+PASS Lesson prerequisites cannot depend on an inaccessible future stage
+PASS Duplicated paths are drafts, not automatically published
+PASS Path duplication preserves skill-tree nodes
+PASS Path duplication preserves the complete lesson hierarchy
+PASS Hierarchy parents cannot silently move existing progress into another path
+PASS Weekly reports are safe to regenerate without duplicates
+PASS Previous-week reports do not inflate activity with this week’s progress
+PASS Recurring jobs do not duplicate reminders or weekly notifications
+PASS Unconfigured SMTP is honestly reported and never marked as sent
+PASS A failed local SMTP connection is recorded as failed, never delivered
+PASS Opting out prevents queued mail from being retried
+PASS Privileged content and grading changes create audit records
+
+72 passed; 0 failed. Test fixture transaction rolled back.

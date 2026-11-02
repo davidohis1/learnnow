@@ -1,0 +1,14 @@
+PASS No raw root-relative rendered links, asset attributes, HTTP form actions or endpoint attributes
+PASS Stylesheets have no root-relative URL dependencies
+PASS No independent PHP URL concatenation reads APP_URL outside the central service
+PASS Application logic contains no preview domain, workspace path or preview origin
+PASS The shared fetch wrapper resolves through the APP_URL client service
+PASS Client response redirects are validated centrally
+PASS Server Location headers are generated centrally
+PASS Front controller normalises the configured mount before dispatch
+PASS Authentication/CSRF cookie paths follow the configured mount
+PASS Queued notification links resolve at actual delivery time
+PASS .htaccess uses no host-dependent Options/php_value/RewriteBase directive
+PASS public/.htaccess uses no host-dependent Options/php_value/RewriteBase directive
+
+Scanned 109 source files. 12 passed; 0 failed.

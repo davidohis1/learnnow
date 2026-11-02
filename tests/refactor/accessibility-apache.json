@@ -1,0 +1,110 @@
+[
+  {
+    "page": "Landing desktop",
+    "violations": []
+  },
+  {
+    "page": "Registration",
+    "violations": []
+  },
+  {
+    "page": "Onboarding interests",
+    "violations": []
+  },
+  {
+    "page": "Learner dashboard",
+    "violations": []
+  },
+  {
+    "page": "Lesson",
+    "violations": []
+  },
+  {
+    "page": "Schedule",
+    "violations": []
+  },
+  {
+    "page": "Mobile /dashboard",
+    "violations": []
+  },
+  {
+    "page": "Mobile /paths/web-development-foundations",
+    "violations": []
+  },
+  {
+    "page": "Mobile /lessons/1",
+    "violations": []
+  },
+  {
+    "page": "Mobile /quizzes/1",
+    "violations": []
+  },
+  {
+    "page": "Mobile /portfolio",
+    "violations": []
+  },
+  {
+    "page": "Mobile /settings",
+    "violations": []
+  },
+  {
+    "page": "Mobile /community",
+    "violations": []
+  },
+  {
+    "page": "Mobile /referrals",
+    "violations": []
+  },
+  {
+    "page": "Mobile /certificates",
+    "violations": []
+  },
+  {
+    "page": "Mobile /reports",
+    "violations": []
+  },
+  {
+    "page": "Admin overview",
+    "violations": []
+  },
+  {
+    "page": "Admin content editor",
+    "violations": []
+  },
+  {
+    "page": "Admin question builder",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin/users",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin/content/paths",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin/content/lessons/1/edit",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin/reviews",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin/rewards",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin/settings",
+    "violations": []
+  },
+  {
+    "page": "Mobile /admin/reports",
+    "violations": []
+  }
+]

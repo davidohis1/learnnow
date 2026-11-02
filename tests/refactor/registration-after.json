@@ -1,0 +1,21 @@
+{
+  "registration": 201,
+  "redirect": "http://127.0.0.1:8082/academy/skills/onboarding",
+  "cookies": [
+    {
+      "name": "ln_csrf",
+      "path": "/academy/skills/"
+    },
+    {
+      "name": "ln_access",
+      "path": "/academy/skills/"
+    },
+    {
+      "name": "ln_refresh",
+      "path": "/academy/skills/"
+    }
+  ],
+  "login": 200,
+  "empty_dashboard": 200,
+  "onboarding_without_seed": 200
+}

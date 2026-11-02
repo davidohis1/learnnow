@@ -1,0 +1,221 @@
+PASS 127.0.0.1:8083 registration page
+PASS 127.0.0.1:8083 APP_URL metadata matches this deployment
+PASS 127.0.0.1:8083 all registration links, forms and assets use the configured base
+PASS 127.0.0.1:8083 no-sniff header
+PASS 127.0.0.1:8083 script CSP remains enforced
+PASS 127.0.0.1:8083 asset /assets/css/fonts.css
+PASS 127.0.0.1:8083 asset /assets/css/main.css
+PASS 127.0.0.1:8083 asset /assets/css/refinements.css
+PASS 127.0.0.1:8083 asset /assets/js/app.js
+PASS 127.0.0.1:8083 asset /assets/js/url.js
+PASS 127.0.0.1:8083 asset /assets/js/api.js
+PASS 127.0.0.1:8083 asset /assets/fonts/font-0.ttf
+PASS 127.0.0.1:8083 asset /assets/fonts/font-8.ttf
+PASS 127.0.0.1:8083 asset /assets/images/favicon.svg
+PASS 127.0.0.1:8083 stylesheet dependencies are base-relative
+PASS 127.0.0.1:8083 private path denied: /.env
+PASS 127.0.0.1:8083 private path denied: /.git/config
+PASS 127.0.0.1:8083 private path denied: /app/bootstrap.php
+PASS 127.0.0.1:8083 private path denied: /vendor/autoload.php
+PASS 127.0.0.1:8083 private path denied: /bin/migrate.php
+PASS 127.0.0.1:8083 private path denied: /config/database.php
+PASS 127.0.0.1:8083 private path denied: /database/migrations/001_initial.sql
+PASS 127.0.0.1:8083 private path denied: /storage/mysql/mysql/user.frm
+PASS 127.0.0.1:8083 private path denied: /storage/logs/application.log
+PASS 127.0.0.1:8083 private path denied: /storage/backups/preview-verification.sql.gz
+PASS 127.0.0.1:8083 private path denied: /tests/fixtures.php
+PASS 127.0.0.1:8083 private path denied: /composer.json
+PASS 127.0.0.1:8083 private path denied: /public/index.php
+PASS 127.0.0.1:8083 private path denied: /README.md
+PASS 127.0.0.1:8083 missing static asset is not falsely successful
+PASS 127.0.0.1:8083 prefixed API 404 is JSON
+PASS 127.0.0.1:8083 HEAD keeps GET route semantics without a body
+PASS 127.0.0.1:8083 routing preserves query parameters
+PASS 127.0.0.1:8083 false-like terms are not accepted as consent
+PASS 127.0.0.1:8083 malformed password confirmation is a validation error
+PASS 127.0.0.1:8083 registration requires CSRF
+PASS 127.0.0.1:8083 cross-site mutations rejected
+PASS 127.0.0.1:8083 actual registration succeeds
+PASS 127.0.0.1:8083 registration redirect is absolute and correctly prefixed
+PASS 127.0.0.1:8083 all authentication/CSRF cookies use the mount path
+PASS 127.0.0.1:8083 cookie Secure matches the verified deployment mode
+PASS 127.0.0.1:8083 cookies preserve HttpOnly and SameSite=Lax
+PASS 127.0.0.1:8083 registration writes a real account
+PASS 127.0.0.1:8083 stored password is an Argon2id hash
+PASS 127.0.0.1:8083 registration invents no XP
+PASS 127.0.0.1:8083 registration schema relationship: user_preferences
+PASS 127.0.0.1:8083 registration schema relationship: study_schedules
+PASS 127.0.0.1:8083 registration schema relationship: notification_preferences
+PASS 127.0.0.1:8083 registration schema relationship: onboarding_responses
+PASS 127.0.0.1:8083 registration schema relationship: referral_codes
+PASS 127.0.0.1:8083 registration schema relationship: auth_sessions
+PASS 127.0.0.1:8083 onboarding submission works
+PASS 127.0.0.1:8083 learner page /dashboard
+PASS 127.0.0.1:8083 generated URLs stay inside the installation: /dashboard
+PASS 127.0.0.1:8083 learner page /paths/web-development-foundations
+PASS 127.0.0.1:8083 generated URLs stay inside the installation: /paths/web-development-foundations
+PASS 127.0.0.1:8083 learner page /lessons/1
+PASS 127.0.0.1:8083 generated URLs stay inside the installation: /lessons/1
+PASS 127.0.0.1:8083 learner page /portfolio
+PASS 127.0.0.1:8083 generated URLs stay inside the installation: /portfolio
+PASS 127.0.0.1:8083 learner page /settings
+PASS 127.0.0.1:8083 generated URLs stay inside the installation: /settings
+PASS 127.0.0.1:8083 learner page /referrals
+PASS 127.0.0.1:8083 generated URLs stay inside the installation: /referrals
+PASS 127.0.0.1:8083 learner page /notifications
+PASS 127.0.0.1:8083 generated URLs stay inside the installation: /notifications
+PASS 127.0.0.1:8083 referral share URL uses APP_URL, not browser origin
+PASS 127.0.0.1:8083 logout redirect
+PASS 127.0.0.1:8083 actual login succeeds
+PASS 127.0.0.1:8083 normalised duplicate email fails honestly
+PASS 127.0.0.1:8084/classroom/skills registration page
+PASS 127.0.0.1:8084/classroom/skills APP_URL metadata matches this deployment
+PASS 127.0.0.1:8084/classroom/skills all registration links, forms and assets use the configured base
+PASS 127.0.0.1:8084/classroom/skills no-sniff header
+PASS 127.0.0.1:8084/classroom/skills script CSP remains enforced
+PASS 127.0.0.1:8084/classroom/skills asset /assets/css/fonts.css
+PASS 127.0.0.1:8084/classroom/skills asset /assets/css/main.css
+PASS 127.0.0.1:8084/classroom/skills asset /assets/css/refinements.css
+PASS 127.0.0.1:8084/classroom/skills asset /assets/js/app.js
+PASS 127.0.0.1:8084/classroom/skills asset /assets/js/url.js
+PASS 127.0.0.1:8084/classroom/skills asset /assets/js/api.js
+PASS 127.0.0.1:8084/classroom/skills asset /assets/fonts/font-0.ttf
+PASS 127.0.0.1:8084/classroom/skills asset /assets/fonts/font-8.ttf
+PASS 127.0.0.1:8084/classroom/skills asset /assets/images/favicon.svg
+PASS 127.0.0.1:8084/classroom/skills stylesheet dependencies are base-relative
+PASS 127.0.0.1:8084/classroom/skills private path denied: /.env
+PASS 127.0.0.1:8084/classroom/skills private path denied: /.git/config
+PASS 127.0.0.1:8084/classroom/skills private path denied: /app/bootstrap.php
+PASS 127.0.0.1:8084/classroom/skills private path denied: /vendor/autoload.php
+PASS 127.0.0.1:8084/classroom/skills private path denied: /bin/migrate.php
+PASS 127.0.0.1:8084/classroom/skills private path denied: /config/database.php
+PASS 127.0.0.1:8084/classroom/skills private path denied: /database/migrations/001_initial.sql
+PASS 127.0.0.1:8084/classroom/skills private path denied: /storage/mysql/mysql/user.frm
+PASS 127.0.0.1:8084/classroom/skills private path denied: /storage/logs/application.log
+PASS 127.0.0.1:8084/classroom/skills private path denied: /storage/backups/preview-verification.sql.gz
+PASS 127.0.0.1:8084/classroom/skills private path denied: /tests/fixtures.php
+PASS 127.0.0.1:8084/classroom/skills private path denied: /composer.json
+PASS 127.0.0.1:8084/classroom/skills private path denied: /public/index.php
+PASS 127.0.0.1:8084/classroom/skills private path denied: /README.md
+PASS 127.0.0.1:8084/classroom/skills missing static asset is not falsely successful
+PASS 127.0.0.1:8084/classroom/skills prefixed API 404 is JSON
+PASS 127.0.0.1:8084/classroom/skills HEAD keeps GET route semantics without a body
+PASS 127.0.0.1:8084/classroom/skills routing preserves query parameters
+PASS 127.0.0.1:8084/classroom/skills false-like terms are not accepted as consent
+PASS 127.0.0.1:8084/classroom/skills malformed password confirmation is a validation error
+PASS 127.0.0.1:8084/classroom/skills registration requires CSRF
+PASS 127.0.0.1:8084/classroom/skills cross-site mutations rejected
+PASS 127.0.0.1:8084/classroom/skills actual registration succeeds
+PASS 127.0.0.1:8084/classroom/skills registration redirect is absolute and correctly prefixed
+PASS 127.0.0.1:8084/classroom/skills all authentication/CSRF cookies use the mount path
+PASS 127.0.0.1:8084/classroom/skills cookie Secure matches the verified deployment mode
+PASS 127.0.0.1:8084/classroom/skills cookies preserve HttpOnly and SameSite=Lax
+PASS 127.0.0.1:8084/classroom/skills registration writes a real account
+PASS 127.0.0.1:8084/classroom/skills stored password is an Argon2id hash
+PASS 127.0.0.1:8084/classroom/skills registration invents no XP
+PASS 127.0.0.1:8084/classroom/skills registration schema relationship: user_preferences
+PASS 127.0.0.1:8084/classroom/skills registration schema relationship: study_schedules
+PASS 127.0.0.1:8084/classroom/skills registration schema relationship: notification_preferences
+PASS 127.0.0.1:8084/classroom/skills registration schema relationship: onboarding_responses
+PASS 127.0.0.1:8084/classroom/skills registration schema relationship: referral_codes
+PASS 127.0.0.1:8084/classroom/skills registration schema relationship: auth_sessions
+PASS 127.0.0.1:8084/classroom/skills onboarding submission works
+PASS 127.0.0.1:8084/classroom/skills learner page /dashboard
+PASS 127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /dashboard
+PASS 127.0.0.1:8084/classroom/skills learner page /paths/web-development-foundations
+PASS 127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /paths/web-development-foundations
+PASS 127.0.0.1:8084/classroom/skills learner page /lessons/1
+PASS 127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /lessons/1
+PASS 127.0.0.1:8084/classroom/skills learner page /portfolio
+PASS 127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /portfolio
+PASS 127.0.0.1:8084/classroom/skills learner page /settings
+PASS 127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /settings
+PASS 127.0.0.1:8084/classroom/skills learner page /referrals
+PASS 127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /referrals
+PASS 127.0.0.1:8084/classroom/skills learner page /notifications
+PASS 127.0.0.1:8084/classroom/skills generated URLs stay inside the installation: /notifications
+PASS 127.0.0.1:8084/classroom/skills referral share URL uses APP_URL, not browser origin
+PASS 127.0.0.1:8084/classroom/skills logout redirect
+PASS 127.0.0.1:8084/classroom/skills actual login succeeds
+PASS 127.0.0.1:8084/classroom/skills normalised duplicate email fails honestly
+PASS localhost:8443/college registration page
+PASS localhost:8443/college APP_URL metadata matches this deployment
+PASS localhost:8443/college all registration links, forms and assets use the configured base
+PASS localhost:8443/college no-sniff header
+PASS localhost:8443/college script CSP remains enforced
+PASS localhost:8443/college production HSTS
+PASS localhost:8443/college production anti-framing policy
+PASS localhost:8443/college production does not emit the test marker
+PASS localhost:8443/college asset /assets/css/fonts.css
+PASS localhost:8443/college asset /assets/css/main.css
+PASS localhost:8443/college asset /assets/css/refinements.css
+PASS localhost:8443/college asset /assets/js/app.js
+PASS localhost:8443/college asset /assets/js/url.js
+PASS localhost:8443/college asset /assets/js/api.js
+PASS localhost:8443/college asset /assets/fonts/font-0.ttf
+PASS localhost:8443/college asset /assets/fonts/font-8.ttf
+PASS localhost:8443/college asset /assets/images/favicon.svg
+PASS localhost:8443/college stylesheet dependencies are base-relative
+PASS localhost:8443/college private path denied: /.env
+PASS localhost:8443/college private path denied: /.git/config
+PASS localhost:8443/college private path denied: /app/bootstrap.php
+PASS localhost:8443/college private path denied: /vendor/autoload.php
+PASS localhost:8443/college private path denied: /bin/migrate.php
+PASS localhost:8443/college private path denied: /config/database.php
+PASS localhost:8443/college private path denied: /database/migrations/001_initial.sql
+PASS localhost:8443/college private path denied: /storage/mysql/mysql/user.frm
+PASS localhost:8443/college private path denied: /storage/logs/application.log
+PASS localhost:8443/college private path denied: /storage/backups/preview-verification.sql.gz
+PASS localhost:8443/college private path denied: /tests/fixtures.php
+PASS localhost:8443/college private path denied: /composer.json
+PASS localhost:8443/college private path denied: /public/index.php
+PASS localhost:8443/college private path denied: /README.md
+PASS localhost:8443/college missing static asset is not falsely successful
+PASS localhost:8443/college prefixed API 404 is JSON
+PASS localhost:8443/college HEAD keeps GET route semantics without a body
+PASS localhost:8443/college routing preserves query parameters
+PASS localhost:8443/college false-like terms are not accepted as consent
+PASS localhost:8443/college malformed password confirmation is a validation error
+PASS localhost:8443/college registration requires CSRF
+PASS localhost:8443/college cross-site mutations rejected
+PASS localhost:8443/college actual registration succeeds
+PASS localhost:8443/college registration redirect is absolute and correctly prefixed
+PASS localhost:8443/college all authentication/CSRF cookies use the mount path
+PASS localhost:8443/college cookie Secure matches the verified deployment mode
+PASS localhost:8443/college cookies preserve HttpOnly and SameSite=Lax
+PASS localhost:8443/college registration writes a real account
+PASS localhost:8443/college stored password is an Argon2id hash
+PASS localhost:8443/college registration invents no XP
+PASS localhost:8443/college registration schema relationship: user_preferences
+PASS localhost:8443/college registration schema relationship: study_schedules
+PASS localhost:8443/college registration schema relationship: notification_preferences
+PASS localhost:8443/college registration schema relationship: onboarding_responses
+PASS localhost:8443/college registration schema relationship: referral_codes
+PASS localhost:8443/college registration schema relationship: auth_sessions
+PASS localhost:8443/college onboarding submission works
+PASS localhost:8443/college learner page /dashboard
+PASS localhost:8443/college generated URLs stay inside the installation: /dashboard
+PASS localhost:8443/college learner page /paths/web-development-foundations
+PASS localhost:8443/college generated URLs stay inside the installation: /paths/web-development-foundations
+PASS localhost:8443/college learner page /lessons/1
+PASS localhost:8443/college generated URLs stay inside the installation: /lessons/1
+PASS localhost:8443/college learner page /portfolio
+PASS localhost:8443/college generated URLs stay inside the installation: /portfolio
+PASS localhost:8443/college learner page /settings
+PASS localhost:8443/college generated URLs stay inside the installation: /settings
+PASS localhost:8443/college learner page /referrals
+PASS localhost:8443/college generated URLs stay inside the installation: /referrals
+PASS localhost:8443/college learner page /notifications
+PASS localhost:8443/college generated URLs stay inside the installation: /notifications
+PASS localhost:8443/college referral share URL uses APP_URL, not browser origin
+PASS localhost:8443/college logout redirect
+PASS localhost:8443/college actual login succeeds
+PASS localhost:8443/college normalised duplicate email fails honestly
+PASS Concurrent duplicate signup yields one account and one explicit rejection
+PASS Concurrent duplicate signup persists exactly one user
+PASS A failed session write has a safe diagnostic reference, not fabricated success
+PASS A failed session write rolls back the complete new account
+PASS The response reference resolves to useful private diagnostics
+PASS Failure response/logging omit passwords and public SQL/stack details
+
+219 passed; 0 failed.

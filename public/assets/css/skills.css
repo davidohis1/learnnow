@@ -1,0 +1,103 @@
+/* Skill areas, roadmaps and group chat. Uses the existing Learnow design tokens. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.badge-coming_soon{background:#f3f1ec;color:#6d6a63}
+.badge-in_progress{background:var(--blue-soft);color:var(--blue)}
+.badge-completed{background:var(--green-soft);color:var(--green)}
+.skills-public{padding-top:40px;padding-bottom:70px}
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.skill-card{display:flex;gap:16px;padding:22px;background:var(--white);border:1px solid var(--border);border-radius:16px;color:inherit;text-decoration:none;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.skill-card:hover{transform:translateY(-2px);border-color:var(--orange)}
+.skill-card.is-soon{background:var(--warm)}
+.skill-card-icon{width:52px;height:52px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;background:var(--orange-soft);color:var(--orange-deep)}
+.skill-card-icon.big{width:68px;height:68px;border-radius:18px}
+.tone-purple .skill-card-icon{background:var(--purple-soft);color:var(--purple)}
+.tone-green .skill-card-icon{background:var(--green-soft);color:var(--green)}
+.tone-blue .skill-card-icon{background:var(--blue-soft);color:var(--blue)}
+.tone-pink .skill-card-icon{background:var(--pink-soft);color:var(--pink)}
+.skill-card-body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.skill-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.skill-card-top strong{font-family:var(--heading);font-size:17px;line-height:1.25}
+.skill-card-tagline{font-weight:600;font-size:14px}
+.skill-card-summary{color:var(--muted);font-size:13.5px}
+.skill-card-link{display:inline-flex;align-items:center;gap:6px;margin-top:6px;color:var(--orange-deep);font-weight:600;font-size:13.5px}
+.skills-cta{margin-top:46px;padding:34px;text-align:center;background:var(--orange-soft);border-radius:18px}
+.skills-cta h2{margin:0 0 6px}
+.skills-cta p{margin:0 0 18px;color:var(--muted)}
+.skill-back{margin-bottom:18px;display:inline-flex}
+.skill-hero{display:flex;align-items:center;gap:20px;padding-bottom:30px}
+.skill-hero h1{margin:4px 0 6px;font-size:38px;letter-spacing:-1.2px}
+.skill-hero p{margin:0;color:var(--muted);font-size:16px}
+.skill-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start;margin-bottom:34px}
+.skill-aside{position:sticky;top:90px}
+.skill-aside h3{margin:12px 0 6px}
+.skill-aside p{color:var(--muted);font-size:14px}
+.skill-section-title{margin:10px 0 18px;font-size:24px}
+.track-panel{background:var(--white);border:1px solid var(--border);border-radius:16px;margin-bottom:16px;box-shadow:var(--shadow);overflow:hidden}
+.track-panel summary{display:flex;align-items:center;gap:16px;padding:20px 22px;cursor:pointer;list-style:none}
+.track-panel summary::-webkit-details-marker{display:none}
+.track-panel-title{display:flex;flex-direction:column;flex:1;min-width:0}
+.track-panel-title strong{font-family:var(--heading);font-size:18px}
+.track-panel-title small{color:var(--muted);font-size:13.5px}
+.track-panel-meta{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.track-panel-chevron{transition:transform .2s;display:inline-flex}
+.track-panel[open] .track-panel-chevron{transform:rotate(180deg)}
+.track-panel-body{padding:4px 22px 24px;border-top:1px solid var(--border)}
+.track-order-title{margin:22px 0 12px;font-size:16px}
+.track-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:24px}
+.lesson-content h2{font-size:19px;margin:20px 0 6px}
+.lesson-content h2:first-child{margin-top:0}
+.lesson-content p{margin:0 0 12px;line-height:1.7}
+.roadmap{list-style:none;margin:0;padding:0;position:relative}
+.roadmap-step{display:flex;gap:16px;position:relative;padding-bottom:18px}
+.roadmap-step:not(:last-child)::before{content:"";position:absolute;left:17px;top:38px;bottom:0;width:2px;background:var(--border)}
+.roadmap-number{width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;z-index:1}
+.roadmap-body{flex:1;min-width:0}
+.roadmap-choice{display:block;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--orange-deep);margin:0 0 8px}
+.roadmap-items{display:grid;gap:10px}
+.roadmap-items.is-multi{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.roadmap-item{display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid var(--border);border-radius:12px;background:var(--white);color:inherit;text-decoration:none}
+a.roadmap-item:hover{border-color:var(--orange)}
+.roadmap-item-icon{width:34px;height:34px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;background:var(--orange-soft);color:var(--orange-deep);flex-shrink:0}
+.roadmap-item-text{display:flex;flex-direction:column;flex:1;min-width:0}
+.roadmap-item-text small{color:var(--muted);font-size:12.5px}
+.roadmap-item.state-completed .roadmap-item-icon{background:var(--green-soft);color:var(--green)}
+.roadmap-item.state-locked,.roadmap-item.state-coming_soon{background:var(--surface)}
+.roadmap-item.state-locked .roadmap-item-icon,.roadmap-item.state-coming_soon .roadmap-item-icon{background:#eceae5;color:#8a8780}
+.chat-card{padding:0;margin-bottom:26px;overflow:hidden}
+.chat-header{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap;padding:22px 24px 14px}
+.chat-header h2{margin:2px 0 4px;font-size:22px}
+.chat-header p{margin:0;color:var(--muted);font-size:13.5px}
+.chat-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;border-top:1px solid var(--border)}
+.chat-main{display:flex;flex-direction:column;min-width:0}
+.chat-feed{height:420px;overflow-y:auto;padding:18px 22px;display:flex;flex-direction:column;gap:12px;background:var(--warm)}
+.chat-placeholder{margin:auto;color:var(--muted);text-align:center}
+.chat-msg{display:flex;gap:10px;align-items:flex-end;max-width:85%}
+.chat-msg.mine{align-self:flex-end;flex-direction:row-reverse}
+.chat-bubble{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:8px 13px;min-width:0}
+.chat-msg.mine .chat-bubble{background:var(--orange-soft);border-color:#ffd9c2}
+.chat-meta{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
+.chat-meta strong{color:var(--ink);font-size:12.5px}
+.chat-bubble p{margin:2px 0 0;overflow-wrap:anywhere;white-space:pre-wrap}
+.chat-hide{border:0;background:none;color:var(--muted);cursor:pointer;margin-left:auto;padding:0 2px;line-height:1;display:inline-flex}
+.chat-hide:hover{color:var(--danger)}
+.chat-highlight{align-self:center;display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:var(--purple-soft);color:#4a3a85;font-size:13px;max-width:92%}
+.chat-highlight time{opacity:.7;font-size:11.5px}
+.chat-highlight.kind-level{background:#fff3d9;color:#7a5200}
+.chat-highlight.kind-achievement{background:var(--orange-soft);color:var(--orange-deep)}
+.chat-highlight.kind-course{background:var(--green-soft);color:var(--green)}
+.chat-highlight.kind-joined{background:var(--blue-soft);color:#2f5f8c}
+.chat-highlight-icon{display:inline-flex}
+.chat-form{display:flex;gap:10px;padding:14px 18px;border-top:1px solid var(--border);background:var(--white)}
+.chat-form input{flex:1;min-width:0;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font:inherit}
+.chat-members{border-left:1px solid var(--border);padding:16px 18px;max-height:520px;overflow-y:auto}
+.chat-members h3{margin:0 0 12px;font-size:14px;display:flex;justify-content:space-between}
+.chat-members ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.chat-members li{display:flex;gap:10px;align-items:center}
+.chat-members li div{display:flex;flex-direction:column;min-width:0}
+.chat-members li strong{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-members li small{color:var(--muted);font-size:11.5px}
+.chat-empty{display:flex;gap:18px;align-items:center;padding:24px;flex-wrap:wrap}
+.chat-empty div{flex:1;min-width:220px}
+.chat-empty h2{margin:0 0 4px}
+.chat-empty p{margin:0;color:var(--muted)}
+@media (max-width:860px){.skill-layout{grid-template-columns:1fr}.skill-aside{position:static}.chat-layout{grid-template-columns:1fr}.chat-members{border-left:0;border-top:1px solid var(--border);max-height:220px}.skill-hero h1{font-size:28px}.track-panel summary{flex-wrap:wrap}.chat-msg{max-width:96%}}

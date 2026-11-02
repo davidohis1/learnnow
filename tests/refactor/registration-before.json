@@ -1,0 +1,11 @@
+{
+  "migration_only_register": {
+    "status": 500,
+    "body": {
+      "ok": false,
+      "message": "Something went wrong. Please try again. Reference: c61163720711"
+    }
+  },
+  "configured_subdirectory_register_page": 404,
+  "unprefixed_root_register_page": 200
+}

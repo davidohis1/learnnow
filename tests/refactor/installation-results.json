@@ -1,0 +1,426 @@
+{
+    "passed": 105,
+    "failed": 0,
+    "checks": [
+        {
+            "passed": true,
+            "name": "All seven migrations run in sorted order"
+        },
+        {
+            "passed": true,
+            "name": "Fresh schema or an explicitly repeatable isolated installation"
+        },
+        {
+            "passed": true,
+            "name": "A second migration run does not rerun completed files"
+        },
+        {
+            "passed": true,
+            "name": "Applied migrations retain checksums and completion state"
+        },
+        {
+            "passed": true,
+            "name": "Migrations install essential roles without curriculum seeding"
+        },
+        {
+            "passed": true,
+            "name": "Administrator permissions use actual role IDs"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: schema_migrations"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: roles"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: permissions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: role_permissions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: users"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: auth_sessions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: refresh_tokens"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: account_tokens"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: rate_limits"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: user_preferences"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: onboarding_responses"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: categories"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: user_interests"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: learning_paths"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: stages"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: stage_prerequisites"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: stage_overrides"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: modules"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: lessons"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: lesson_prerequisites"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: lesson_resources"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: lesson_checklists"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: checklist_progress"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: learner_notes"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: enrolments"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: lesson_progress"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: quizzes"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: quiz_questions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: answer_options"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: quiz_attempts"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: quiz_responses"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: quiz_response_options"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: assignments"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: grading_rubrics"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: assignment_submissions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: assignment_feedback"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: submission_history"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: study_schedules"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: study_days"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: activity_events"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: daily_activity"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: streak_records"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: reward_rules"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: xp_transactions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: coin_transactions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: level_definitions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: achievements"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: learner_achievements"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: streak_protections"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: lives_records"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: skill_nodes"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: skill_connections"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: portfolio_projects"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: project_skills"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: project_images"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: buddy_relationships"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: friend_challenges"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: peer_review_assignments"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: peer_review_questions"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: peer_review_responses"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: community_reports"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: certificates"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: certificate_verifications"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: referral_codes"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: referrals"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: referral_campaigns"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: referral_rewards"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: notification_preferences"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: notifications"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: mail_outbox"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: weekly_reports"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: system_settings"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: audit_logs"
+        },
+        {
+            "passed": true,
+            "name": "Migration\/schema column contract: weekly_report_paths"
+        },
+        {
+            "passed": true,
+            "name": "No missing or unexpected application tables"
+        },
+        {
+            "passed": true,
+            "name": "All declared foreign-key relationships are installed"
+        },
+        {
+            "passed": true,
+            "name": "Optional curriculum seed succeeds after baseline migrations"
+        },
+        {
+            "passed": true,
+            "name": "Repeated curriculum seed preserves existing content"
+        },
+        {
+            "passed": true,
+            "name": "Starter content contains no fabricated users or learning activity"
+        },
+        {
+            "passed": true,
+            "name": "Changed migration checksum is rejected"
+        },
+        {
+            "passed": true,
+            "name": "Partial DDL failure is recorded, not falsely marked applied"
+        },
+        {
+            "passed": true,
+            "name": "The test exercises real MySQL implicit DDL commits"
+        },
+        {
+            "passed": true,
+            "name": "Failed migration retains its private diagnostic reference"
+        },
+        {
+            "passed": true,
+            "name": "A failed migration is not silently rerun"
+        },
+        {
+            "passed": true,
+            "name": "Explicit retry succeeds after a reconciled partial DDL failure"
+        },
+        {
+            "passed": true,
+            "name": "Nested transactions use real savepoint rollback while preserving outer work"
+        },
+        {
+            "passed": true,
+            "name": "Bootstrap works on hosts with putenv disabled"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 1"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 2"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 3"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 4"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 5"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 6"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 7"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 8"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 9"
+        },
+        {
+            "passed": true,
+            "name": "Invalid configuration fails closed: case 10"
+        },
+        {
+            "passed": true,
+            "name": "Deployment preflight performs a real schema\/database check"
+        },
+        {
+            "passed": true,
+            "name": "Environment parsing preserves quoted secrets, comments, BOM and empty values"
+        }
+    ]
+}
