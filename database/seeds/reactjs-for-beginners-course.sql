@@ -1845,7 +1845,6 @@ List the hooks you have used so far and mark three places in old code where a ho
 Call hooks only at the top level of a component or custom hook, never inside conditions or loops.
 Common hooks are useState, useEffect, useContext, useReducer, useRef, useCallback and useMemo.', 'cF2lQ_gZeA8', 8, 1, 1, 0, 'published');
 SET @lesson=LAST_INSERT_ID();
-INSERT INTO lesson_prerequisites(lesson_id,required_lesson_id) VALUES(@lesson,@prev_lesson);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Explain what a hook is.',0);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Name the most common hooks.',1);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Follow the rules of hooks.',2);
@@ -3233,7 +3232,6 @@ Add a console log to three components, click around your app and note which comp
 Renders are cheap individually, but many of them in a big tree cost time.
 The goal is not zero renders; it is no unnecessary renders on expensive components.', 'YP2f-ErXG_M', 3, 1, 1, 0, 'published');
 SET @lesson=LAST_INSERT_ID();
-INSERT INTO lesson_prerequisites(lesson_id,required_lesson_id) VALUES(@lesson,@prev_lesson);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Define a render in React.',0);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Explain why render counts matter.',1);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Plan how to measure renders.',2);
@@ -3823,7 +3821,6 @@ Write down three bugs you have hit in React that a type checker would have caugh
 In React it catches wrong prop names, missing props and unsafe state updates.
 Editors then offer accurate autocomplete and refactoring for components.', 'TiSGujM22OI', 3, 1, 1, 0, 'published');
 SET @lesson=LAST_INSERT_ID();
-INSERT INTO lesson_prerequisites(lesson_id,required_lesson_id) VALUES(@lesson,@prev_lesson);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Explain what TypeScript adds to JavaScript.',0);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Name three benefits in React.',1);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Describe a typical setup.',2);
@@ -4879,7 +4876,6 @@ Write short answers to ten likely questions, including why keys matter, when to 
 Interviewers value reasoning about trade-offs more than memorised definitions.
 Prepare two or three real stories about bugs you fixed and performance work you did.', 'tfPq0iCJioQ', 8, 1, 1, 0, 'published');
 SET @lesson=LAST_INSERT_ID();
-INSERT INTO lesson_prerequisites(lesson_id,required_lesson_id) VALUES(@lesson,@prev_lesson);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'List the core topics interviewers ask about.',0);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Practise explaining trade-offs.',1);
 INSERT INTO lesson_checklists(lesson_id,label,position) VALUES(@lesson,'Build answers from real work.',2);
